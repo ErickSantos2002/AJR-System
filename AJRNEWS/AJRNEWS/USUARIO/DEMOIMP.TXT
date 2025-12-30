@@ -1,0 +1,86 @@
+* DEMONSTRATIVO DE RESULTADO - IMPRESSORA
+\27\64\27\50\15
+L+----------------------------------------------------------------------------+
+L|                                                                            |
+L|      &EMPRESA                                                              |
+L|                                                                            |
+L|          DEMONSTRATIVO DE RESULTADO EM &DATAF                              |
+L+----------------------------------------------------------------------------+
+L|                                                                            |
+L| RECEITA OPERACIONAL BRUTA                                                  |
+L|   Venda de produtos                                   [A1=#2980         ]  |
+L|   Venda de servi‡os                                   [A2=#3122         ]  |
+L|   Venda de mercadorias                                [A3=#3056         ]  |
+L|                                                       [Z1=A1>A3         ]  |
+L|                                                                            |
+L| DEDU€™ES DA RECEITA BRUTA                                                  |
+L|   Impostos incidentes sobre vendas                    [B1=#3228         ]  |
+L|   Devolu‡”es e abatimentos                            [B2=#3205 + #3211 ]  |
+L|                                                       [Z2=B1 + B2       ]  |
+L|                                                                            |
+L| RECEITA OPERACIONAL LIQUIDA                           [Y1=Z1 + Z2       ]  |
+L|                                                                            |
+F B10 = (( #3553 + #3642  ) * -1)
+L| CUSTO DOS PRODUTOS VENDIDOS E DOS SERVI€OS PRESTADOS  [B10              ]  |
+L|                                                                            |
+L| LUCRO BRUTO                                           [Y2=Y1 + B10      ]  |
+L|                                                                            |
+L|                                                                            |
+L| DESPESAS OPERACIONAIS                                                      |
+L|   Com vendas                                          [C1=#4179         ]  |
+L|   Gerais e administrativas                            [C2=#4713         ]  |
+L|   Despesas Financeiras                                [C3=#5256         ]  |
+L|                                                       [Z3=C1 + C2 + C3  ]  |
+L|                                                                            |
+L| OUTRAS RECEITAS E DESPESAS OPERACIONAIS                                    |
+L|   Resultados de participa‡”es em outras sociedades                         |
+L|     Participa‡”es nos result.de colig. e controladas                       |
+L|       pelo m‚todo de equivalˆncia patrimonial         [D1=#3398         ]  |
+L|     Dividendos e rendimentos de outros investimentos  [D2=#3406         ]  |
+L|   Outras Receitas                                  [D3=#3346+#3429+#3286]  |
+L|                                                                            |
+L|                                                       [ G1=D1>D3        ]  |
+L|                                                                            |
+L| LUCROS OPERACIONAL                                    [Y3=(Y2 + G1)-Z3  ]  |
+L|                                                                            |
+L|                                                                            |
+F E1 = #3441
+L| RESULTADOS NAO OPERACIONAIS                                                |
+?E1 : 0
+>|   Ganhos de capitaL                                   [E1               ]  |
+<|   ( - ) Perdas de capital                             [E1               ]  |
+L|                                                                            |
+L| RESULTADO DA CORRE€AO MONETRIA DO EXERCICIO          [E2=#2861         ]  |
+L|                                                                            |
+L| RESULTADO DO EXERCICIO ANTES DO IR E DE PARTICIPACOES [Y4=Y3 + E1+E2    ]  |
+F G1=0
+? Y4 : 0
+> G1 = Y4 * 0.15
+F G3=0
+? Y4 : 240000,00
+> G3 = y4 * 0.10
+L| PROVISAO PARA IMPOSTO DE RENDA                        [G5 = G1  + G3    ]  |
+L|                                                                            |
+L| PARTICIPA€™ES E CONTRIBUI€™ES                                              |
+L|   Debˆntures                                          [F1=#2915         ]  |
+L|   Empregados                                          [F2=#2921         ]  |
+L|   Administradores                                     [F3=#2938         ]  |
+L|   Partes Benefici rias                                [F4=#2944         ]  |
+L|   Fundos de assistˆncia a empregados                  [F5=#2951         ]  |
+L|                                                                            |
+F   Y5 = Y4 - G5 + F1 + F2 + F3 + F4 + F5
+L|                                                                            |
+? Y5 : 0
+=| RESULTADO NULO                                                             |
+<| PREJUIZO                                              [Y5               ]  |
+>| LUCRO LIQUIDO DO EXERCICIO                            [Y5               ]  |
+L|                                                                            |
+L+----------------------------------------------------------------------------+
+\12
+\27\64
+
+
+
+
+
+

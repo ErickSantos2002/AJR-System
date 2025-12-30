@@ -1,0 +1,25 @@
+*  FOLHA DE PAGAMENTO
+T      LANÄAMENTO DA FOLHA DE PAGAMENTO
+T  DATA DE LANÄAMENTO ................    {D1   }
+T  MES DE REFERENCIA .................    {T1 }
+T  VALORES:
+t  --------
+T  SALèRIOS E ORDENADOS ..............    {V1           }
+t  ENCARGOS SOCIAIS:
+T           IAPAS EMPREGADOS .........    {V2           }
+T           IAPAS EMPRESA ............    {V3           }
+T           FGTS .....................    {V4           }
+t           IMPOSTO SINDICAL .........    {V5           }
+T           I.R.R.F. .................    {V6           }
+t  Adiantamento de Sal†rio ...........    {v8           }
+T  SALèRIO LIQUIDO....................    {V7           }
+t    SAL.LIQ = SALARIO - IAPAS EMPREGADO - I.R. - IMP.SINDICAL - ADTO.
+T
+LD1,3665,0,V1,547,T1
+LD1,0,2335,V2,551,T1
+LD1,3719,2335,V3,551,T1
+LD1,3725,2341,V4,566,T1
+LD1,0,2358,V5,571,T1
+LD1,0,5546,V6,585,T1
+LD1,0,2329,V7,547,T1
+ld1,0,508,v8,590,t1

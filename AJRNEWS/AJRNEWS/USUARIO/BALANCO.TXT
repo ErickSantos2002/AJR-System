@@ -1,0 +1,120 @@
+*  BALANCO PATRIMONIAL - IMPRESSORA
+*
+\27\64\27\48\15
+*
+F   M6  = #900  + #945  + #1005  + #1028 + #1034 + #1041
+F   P12 = #1778 + #1809 + #1838 + #1867
+F   H2  = #394 + #431 + #448 + #454 + #461 + #477 + #610 +#550
+F   P6  = #1413 + #1465 + #1531 + #1643
+F   W5  = #2967 - #3547
+?   W5  : 0
+>   W1  = W5 * 0.15
+?   W5  : 240000,00
+>   W2  = W5 * 0.10
+F   W3  = W5 - W1
+*
+l+-------------------------------------------------------------------------------------------------------------------------------+
+l|                                                                                                                               |
+l|                                                  &empresa                                                                     |
+l|                                                                                                                               |
+l|                                   B A L A N € O   P A T R I M O N I A L   E M   &dataf                                        |
+l|                                                                                                                               |
+l+---------------------------------------------------------------+---------------------------------------------------------------+
+l|                        A T I V O                              |                       P A S S I V O                           |
+l+---------------------------------------------------------------+---------------------------------------------------------------+
+l| ATIVO CIRCULANTE                                              | PASSIVO CIRCULANTE                                            |
+l|   Dispon¡vel                                                  |   Empr‚stimos                        [ Q1  = #1896 - #1933   ]|
+l|     Caixa e Bancos                   [ A3 = #46 + #75        ]|   Debˆntures                         [ Q2  = #1979           ]|
+l|     Bancos conta aplica‡„o           [ A4 = #106             ]|   Financiamentos banc rios           [ Q3  = #1933           ]|
+l|                                      [ A5 = A3 + A4          ]|   Fornecedores                       [ Q4  = #2022           ]|
+l|   Clientes                                                    |   Impostos e taxas a recolher        [ Q5  = #2111           ]|
+l|     Duplicatas a receber             [ G2 = #141+#365+#371   ]|   Provis„o para imposto de renda     [ Q6  = #2891           ]|
+l|     Coligadas e controladas                                   |   Adiantamentos de clientes          [ Q7  = #2201           ]|
+l|     (-) Duplicatas descontadas       [ G4 = #299             ]|   Contas a pagar                                              |
+l|     (-) Provis„o para cr‚ditos                                |   Dividendos propostos a pagar                                |
+l|         de liquida‡„o duvidosa       [ G5 = #320             ]|   Gratifica‡”es e participa‡”es                               |
+l|                                      [ G1 = G2+G5+G4         ]|   Participa‡”es de partes benefici rias                       |
+l|   Outros Cr‚ditos                                             |   Provis„o para riscos fiscais                                |
+l|     T¡tulos e contas a receber       [ H2                    ]|   Outras Obrigacoes                  [ Q13 = #2192 + #2201   ]|
+l|     Impostos a recuperar             [ H3 = #550             ]|                                                               |
+l|     (-) Provis„o para perda dos                               |     TOTAL DO PASSIVO CIRCULANTE      [ B55 = Q1>Q7+Q13       ]|
+l|         cr‚ditos de liquida‡„o duvidosa[H4= #626 + #632      ]|                                                               |
+l|                                      [ H1 = H2+H3+H4         ]|                                                               |
+l|                                                               |                                                               |
+l|   Investimentos tempor rios          [ E1 = #649             ]| EXIG¡VEL A LONGO PRAZO                                        |
+l|                                                               |   Empr‚stimos e financiamentos       [ K1  = #2387           ]|
+l|   Estoques                           [ D1 = #684             ]|   Debˆntures                         [ K2  = #2447           ]|
+l|                                                               |   Provis„o para imposto de renda     [ K3  = #2499           ]|
+l|   Despesas do exerc¡cio seguinte, pagas[C1= #827             ]|   Outras provis”es                                            |
+l|                                                               |                                                               |
+l|     TOTAL DO ATIVO CIRCULANTE        [F55=A5+G1+H1+E1+D1+C1  ]|     TOTAL DO EXIG¡VEL A LONGO PRAZO  [ B65 = K1>K3           ]|
+l|                                                               |                                                               |
+l| REALIZVEL A LONGO PRAZO                                      |                                                               |
+l|   Cr‚ditos e valores                                          |                                                               |
+l|     Contas a receber                 [ M2 = #951 + #968      ]|                                                               |
+l|     Coligadas e controladas          [ M3 = #997             ]| RESULTADOS DE EXERC¡CIOS FUTUROS                              |
+l|     Diretores e acionistas           [ M4 = #974 + #981      ]|   Receitas de exerc¡cios futuros     [   K10 = #2536         ]|
+l|     Empr‚stimos compuls¢rios         [ M5 = #922             ]|   (-) Custos e despesas              [   K11 = #2542         ]|
+l|     Outros cr‚ditos e valores        [ M6                    ]|                                                               |
+l|     (-) Provis„o para perdas e cr‚ditos                       |     TOTAL DE RESULT. DE EXERC. FUTUROS[  B75 = K10 + K11     ]|
+l|         de liquida‡„o duvidosa       [ M7 = #1011 + #1057    ]|                                                               |
+l|                                      [ M1 = M2>M7            ]|                                                               |
+l|   Investimentos tempor rios a longo prazo                     |                                                               |
+l|     T¡tulos e valores mobili rios    [         N2 = #1070    ]|                                                               |
+l|     Dep¢sitos para investimentos fiscais[      N3 = #1086    ]| PATRIM“NIO L¡QUIDO                                            |
+l|     Participa‡”es em fundos de investimento[   N4 = #1123    ]|   Capital Social                                              |
+l|     Participa‡”es em outras empresas [         N5 = #1169    ]|     Subscrito                        [ H11 = #2588           ]|
+l|     (-) Provis„o para perdas         [       N6 = #1175+#1181]|     (-) A integralizar               [ H12 = #2594           ]|
+l|                                      [ N1 = N2>N6            ]|     Realizado                        [ H13 = H11 + H12       ]|
+l|   Despesas antecipadas                                        |                                                               |
+l|     Imposto de renda diferido        [ I2 = #1212            ]|                                                               |
+l|     Premios de Seguros               [ I3 = #1206            ]|                                                               |
+l|                                      [ I1 = I2 + I3          ]|   Reservas de capital                [ H21 = H16>H20         ]|
+l|                                                               |     Corre‡„o monet ria do capital    [ H16 = #2654           ]|
+l|     TOTAL DO REALIZVEL A LONGO PRAZO[ F65 = M1 + N1 + I1    ]|     gio na emiss„o de a‡”es         [ H17 = #2677           ]|
+l|                                                               |     Prˆmio na emiss„o de debˆntures  [ H18 = #2708           ]|
+l| ATIVO PERMANENTE                                              |     Doa‡”es e subven‡”es para investimentos[ H19 =#2661      ]|
+l|   Investimentos                                               |     Alienacoes                       [ H20 = #2683+#2690     ]|
+l|     Participa‡„o em outras sociedades[ P2 = #1241            ]|     Reservas de reavalia‡„o          [ D10 = #2714           ]|
+l|     Outros investimentos permanentes [ P3 = #1347            ]|     Reservas de lucros               [ D18 = D12>D16         ]|
+l|                                      [ P1 = P2 + P3          ]|       Legal                          [ D12 = #2750           ]|
+l|   Imobilizado                                                 |       Para contigˆncias              [ D13 = #2772           ]|
+l|     Bens em opera‡„o                                          |       Lucros a realizar              [ D14 = #2789           ]|
+l|       Custo corrigido                [ P6                    ]|       Estatutarias                   [ D15 = #2766           ]|
+l|       (-) Deprecia‡„o acumulada      [ P7 = #1554            ]|       Especial p/ dividendos obrigatorios[ D16=#2803         ]|
+l|                                      [ P8 = P6 + P7          ]|     Participacoes e contribuicoes    [ D17 = #2909           ]|
+l|       Imobilizado em andamento       [ P9 =      0,00        ]|                                                               |
+l|                                      [ P10 = P8 + P9         ]|                                                               |
+l|                                                               |     Lucros acumulados                [ D50 = #2832+W5        ]|
+l|   Diferido                                                    |                                                               |
+l|     Custo corrigido                  [ P11 = #1703 - P12     ]|     Acoes em tesouraria              [ S01=#2855             ]|
+l|     Amortiza‡„o acumulada            [ P12                   ]|                                                               |
+l|                                      [ P13 = P11 + P12       ]|                                                               |
+l|                                                               |                                                               |
+l|     TOTAL DO ATIVO PERMANENTE        [ F75 = P1 + P10 + P13  ]| TOTAL DO PATRIM“NIO L¡QUIDO [B80=H13+H21+D10+D18+D50+S01+D17 ]|
+l+---------------------------------------------------------------+---------------------------------------------------------------+
+l| TOTAL DO ATIVO                       [ F85 = F55 + F65 + F75 ]| TOTAL DO PASSIVO                     [B85=B55+B65+B75+B80    ]|
+l+---------------------------------------------------------------+---------------------------------------------------------------+
+\12
+\27\64
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

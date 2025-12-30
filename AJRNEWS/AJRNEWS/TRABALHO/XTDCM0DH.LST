@@ -1,0 +1,628 @@
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    1
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                         
+         SALDO ANTERIOR                                                                                                   3.465,18C
+01/03/24 Valor   Ref.   Pagto   de  almoços  (Cabo  de  Santo
+         Agostinho)                                             1494  111163                              106,00          3.571,18C
+         Valor Ref. Pagto de 9 Almoços (demolição)              5552  111171                              135,00          3.706,18C
+         Valor  Ref.  Pagto  Aluguel de andaimes, diagonais e
+         plataformas na Locape c/a Fatura 91277                  827  111678                              166,00          3.872,18C
+         Valor  Ref.  Pagto  do  serviço de lava-jato (Const.
+         Santo Antonio)                                         5552  111686                              350,00          4.222,18C
+         Valor  Ref.  Pagto  do  aluguel  da Kombi (demolição
+         manual) - Alexsandro                                   5552  111694                            1.400,00          5.622,18C
+         Valor Ref. Pagto da mao de obra (Diogo)                5919  111708                              800,00          6.422,18C
+         Valor  Ref.  Abastec. RE04, HVC1036 e JQR2H64 ma APR
+         Combustiveis - 21/02/24                                      111716                            2.033,71          8.455,89C
+         Valor  Ref.  Abastec.RE01,   RE04, JQR2H64 e EH01 ma
+         APR Combustiveis - 29/02/24                                  111759                            3.425,84         11.881,73C
+         Valor  Ref.  Abastec.RE03 e RE04 ma APR Combustiveis
+         c/ as NFCe 118214 e 116231 - 01/03/24                        111805                              987,76         12.869,49C
+         Valor  Ref. Pagto do Exame Demissional (Aristide) na
+         Max Saúde                                              1666  111864                               44,00         12.913,49C
+         Valor Ref. Pagto mão de obra (João)                    4073  111988                            4.400,00         17.313,49C
+         Valor  Ref. Pagto do Uber (Antonio Fernando) - Cabo/
+         Garagem (carro)                                        6021  111996                               80,72         17.394,21C
+         Valor  Ref. Pagto do Uber (Antonio Fernando) - Cabo/
+         Garagem (moto)                                         6021  112003                               35,46         17.429,67C
+         Valor Ref. Pagto do serviço de freio (Madson)          1695  112011                            1.400,00         18.829,67C
+         Valor Ref. receb.  fokus guilherme B. Hemetério        6244  112925          9.720,50                            9.109,17C
+         Valor Ref. receb. bm 33   cb giliarde                   359  112941          1.000,00                            8.109,17C
+         Valor Ref. Pagto do Estacionamento (Nivus)             5731  113913                               10,00          8.119,17C
+02/03/24 Valor Ref. Mantimentos                                 1494  111830                              182,17          8.301,34C
+         Valor Ref. Mantimentos                                 1494  111848                               11,00          8.312,34C
+         Valor Ref. Pagto do serviço de elétrica (Euclides)     1695  111881                              700,00          9.012,34C
+         Valor Ref. Pagto dos almoços (demolição manual)        6280  111899                              180,00          9.192,34C
+         Valor  Ref.  Compra de madeirit resinado no Mercadão
+         da Madeira                                             6280  111911                              630,00          9.822,34C
+         Valor Ref. CPagto do serviço de corte de árvores       3241  111961                            1.000,00         10.822,34C
+         Valor Ref. Devolução de aporte financeiro              1287  111970                            2.000,00         12.822,34C
+         Valor  Ref.  Almoço  de Wanderson e Diogo...e compra
+         de plug p tomada                                       6280  112062                               58,50         12.880,84C
+03/03/24 Valor Ref. Pagto dos almoços (demolição manual)        6280  111902                              160,00         13.040,84C
+         Valor Ref. Recebimento Caixa                            129  111953                            2.000,00         15.040,84C
+04/03/24 Valor Ref. Refeições - Café da manhã                   1494  111856                               50,85         15.091,69C
+         Valor Ref. Pagto de 5 Almoços (demolição)              5552  111872                               75,00         15.166,69C
+         Valor Ref. Pagto Fatura do Cartão Luiza Cred           2654  112038                              519,72         15.686,41C
+         Valor Ref. Pagto Fatura do Cartão Midway               2654  112046                              962,68         16.649,09C
+         Valor Ref. Pagto Fatura do Cartão Hipercard            2654  112054                            5.124,89         21.773,98C
+         Valor Ref. Compra de 4 garrafões (água mineral)        1347  112071                               20,00         21.793,98C
+         Valor  Ref.  Conserto  do pneu na Borracharia Nª Sra
+         da Conceição (RE04)                                    4861  112089                              150,00         21.943,98C
+         Valor Ref. Pagto produção (CB Ailton)                   974  112097                            4.980,50         26.924,48C
+         Valor Ref. Pagto produção (CB Badu)                     981  112101                            3.161,00         30.085,48C
+         Valor Ref. Pagto produção (CB Lourenço)                1117  112119                            5.000,00         35.085,48C
+         Valor Ref. Pagto produção (CB Jean)                    1130  112135                           11.623,50         46.708,98C
+         Valor Ref. Pagto produção (CB Nem)                     5322  112143                            5.296,79         52.005,77C
+         Valor  Ref.  Pagto  Compra  de câmara de ar/freio na
+         Kropneus c/ a NF 200694                                3725  112321                              520,00         52.525,77C
+         Valor  Ref.  Pagto  Compra  de  óleo  hexx  e  graxa
+         rolamento na Vertical c/ NF 47936 - 4/4                2737  112330                              216,32         52.742,09C
+         Valor  Ref.  Pagto  Aluguel  de 2 martelos demolidor
+         30kg c/a Fatura 153050                                  827  112348                            1.800,00         54.542,09C
+         Valor Ref. Pagto Fatura da TIM - Comp. 01/2024          939  112356                              319,53         54.861,62C
+         Valor Ref. Pagto INSS - Comp. 01/2024                        112372                            9.075,13         63.936,75C
+         Valor Ref. Retirada Pró-labore                         3174  113000                            1.500,00         65.436,75C
+         Valor Ref. trasnf. para itau em 04/03/24               4535  113026         50.000,00                           15.436,75C
+         Valor Ref. Refeições                                   1494  113603                               43,55         15.480,30C
+05/03/24 Valor Ref. Toscana                                     1494  112151                               20,40         15.500,70C
+         Valor Ref. Toscana                                     1494  112160                               28,00         15.528,70C
+         Valor Ref. Mantimentos                                 1494  112178                              113,61         15.642,31C
+         Valor Ref. Verduras                                    1494  112186                               60,55         15.702,86C
+         Valor Ref. Papelaria                                   6280  112194                                5,20         15.708,06C
+         Valor Ref. Despesas ADM                                2721  112208                               23,00         15.731,06C
+         Valor Ref. Refeição                                    1494  112216                                9,00         15.740,06C
+         Valor Ref. Pagto de 5 Almoços (demolição)              5552  112224                               75,00         15.815,06C
+         Valor Ref. Pagto de 3 Almoços (demolição)              6280  112232                               45,00         15.860,06C
+         Valor Ref. Pagto Vigilância - Vencto: 05/03/24          811  112259                              209,03         16.069,09C
+         Valor Ref. Pagto da MC Gases - 1/2                     3145  112267                            1.090,00         17.159,09C
+         Valor Ref. Pagto Assessoria Contábil - janeiro/24      4788  112275                            1.500,00         18.659,09C
+         Valor Ref. Pagto Negoc. BM 22, BM 23 e BM 24 - 1/2      922  112283                            2.771,25         21.430,34C
+         Valor  Ref. Pagto Partic. João (Vanessa) - De acordo
+         c/ BM02 (Curado)                                       6103  112291                           11.318,66         32.749,00C
+         Valor  Ref.  Pagto  participação  (Elias) - Baptista
+         Leal                                                   3241  112305                            2.500,00         35.249,00C
+         Valor  Ref.  Pagto  do adiant.50% do fornecimento de
+         BGS (Areia Express)                                    3241  112313                            4.950,00         40.199,00C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    2
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+05/03/24 Valor Ref. Pagto Tx. IPVA 2024 (PET5522) - 2/10         796  112399                              159,99         40.358,99C
+         Valor  Ref.  Pagto  Compra  de  2 pneus (vectra) na\
+         Drive Auto c/ a NF 64471 - 2/6                          767  112402                              441,57         40.800,56C
+         Valor  Ref.  Pagto  Demolição Santa Maria (Julio) 17
+         de agosto 428,08 TON                                    715  112429                            6.425,44         47.226,00C
+         Valor  Ref.  Abastec.  RE04,  Classic,  RE02, EH01 e
+         RE01  na  APR  Combust  c/  as  NFC  117764, 118867,
+         202276, 202279 e 118740 - 02 e 03/03/24                      112445                            2.178,48         49.404,48C
+         Valor  Ref.  Abastec.  RE03,  RE04,  Montana, na APR
+         Combust  c/ as NFC 117837, 202962, 117847 e 117782 -
+         04/03/24                                                     112500                              816,30         50.220,78C
+         Valor Ref. Refeições                                   1494  112968                               28,00         50.248,78C
+         Valor Ref. Estacionamento (Nivus)                      5731  112976                                7,00         50.255,78C
+         Valor Ref. trasnf. para itau em 05/03/24               4535  113034         40.000,00                           10.255,78C
+06/03/24 Valor  Ref.  Ajuda de custo combustível p o mecânico
+         Madson                                                 1577  112577                              100,00         10.355,78C
+         Valor  Ref.  Pagto de 9 Almoços (demolição manual) -
+         R$ 20 cada                                             6280  112593                              180,00         10.535,78C
+         Valor Ref. Pagto Lava-jato                             5552  112607                               30,00         10.565,78C
+         Valor Ref. Pagto de 2 diárias (Fábio)                  1791  112950                              300,00         10.865,78C
+         Valor  Ref.  Pagto  Compra  de  filtros:  separador,
+         combustivel,  ar  primario, ar secund.e lubrificante
+         na MJ Peças c/ a NF 955 - 1/2                           840  112984                              525,00         11.390,78C
+         Valor  Ref.  Pagto  Tx.  Infração DETRAN (NXU6768) -
+         DD12502318/6602                                        5983  112992                              234,78         11.625,56C
+         Valor  Ref.  Abastec.  RE04,  EH01  e Estoque na APR
+         Combustiveis c/ as NFCs 118287 e 118817 - 05/03/24           113051                            1.872,10         13.497,66C
+         Valor  Ref.  Abastec.  RE04,  EH01  e Estoque na APR
+         Combustiveis  c/  as  NFCs 118762, 118794 e 118869 -
+         06/03/24                                                     113093                              885,12         14.382,78C
+         Valor Ref. Aporte financeiro                            129  113131            500,00                           13.882,78C
+         Valor  Ref.  Abastec.  Iveco  161,240  x  R$ 5,67 na
+         Petrocabo c/ a NFCe 419663                             2074  113140                              914,23         14.797,01C
+07/03/24 Valor Ref. Pagto do Uber (Sandro) - Garagem/ Cabo      6021  113158                               68,00         14.865,01C
+         Valor  Ref.  Compra de mangueira na Mangoflex (RE01)
+         c/ a NF 57200                                          1608  113174                              105,00         14.970,01C
+         Valor  Ref.  Pagto de 4 Almoços (demolição manual) -
+         R$ 20 cada                                             6280  113182                               80,00         15.050,01C
+         Valor Ref. Pagto de 5 Almoços (demolição)              5552  113191                               75,00         15.125,01C
+         Valor  Ref. Pagto Compra de 2 pneus na Kropneus c/ a
+         NF 200708 - 1/4                                        3725  113301                            1.915,00         17.040,01C
+         Valor Ref. Pagto FGTS Comp. 02/2024                    2832  113310                            1.641,86         18.681,87C
+         Valor Ref. Pagto FGTS Comp. 04/2015                    2832  113492                              255,09         18.936,96C
+         Valor Ref. Pagto FGTS Comp. 05/2015                    2832  113506                              254,03         19.190,99C
+         Valor Ref. Pagto FGTS Comp. 06/2015                    2832  113514                              252,81         19.443,80C
+         Valor Ref. Pagto FGTS Comp. 07/2015                    2832  113522                              251,42         19.695,22C
+         Valor Ref. Pagto FGTS Comp. 08/2015                    2832  113531                              250,21         19.945,43C
+         Valor Ref. Pagto FGTS Comp. 09/2015                    2832  113549                              248,96         20.194,39C
+         Valor Ref. Pagto FGTS Comp. 10/2015                    2832  113557                              247,72         20.442,11C
+         Valor Ref. Pagto FGTS Comp. 11/2015                    2832  113565                              246,63         20.688,74C
+         Valor Ref. Pagto FGTS Comp. 12/2015                    2832  113573                              245,32         20.934,06C
+         Valor Ref. Pagto FGTS Comp. 01/2016                    2832  113581                              268,36         21.202,42C
+         Valor Ref. Pagto FGTS Comp. 02/2016                    2832  113590                              267,28         21.469,70C
+         Valor Ref. Transf. entre contas                        4535  122912          1.000,00                           20.469,70C
+         Valor Ref. Transf. entre contas                        4535  122921          7.000,00                           13.469,70C
+08/03/24 Valor  Ref.  Compra  de  carro-pipa  c/  6000 litros
+         (Luis Carlos)                                          2721  113280                              200,00         13.669,70C
+         Valor Ref. Refeições                                   1494  113298                               80,64         13.750,34C
+         Valor Ref. Compra de 3 garrafões (água mineral)        1347  113328                               15,00         13.765,34C
+         Valor  Ref.  Pagto de 4 Almoços (demolição manual) -
+         R$ 20 cada                                             6280  113336                               80,00         13.845,34C
+         Valor Ref. Pagto de 5 Almoços (demolição)              5552  113344                               75,00         13.920,34C
+         Valor  Ref. Pagto Compra de relé pino, porca, bucha,
+         arruela e correia na MJ Peças c/ a NF 960               840  113654                              910,00         14.830,34C
+         Valor Ref. Pagto Assessoria Contábil - fevereiro/24    4788  113662                            1.500,00         16.330,34C
+         Valor Ref. Pagto do Uber (Rodrigo)                     2081  113671                               37,72         16.368,06C
+         Valor  Ref.  Pagto  do  serviço  de  solda  da  RE01
+         (Givanildo)                                            1608  113689                               50,00         16.418,06C
+         Valor Ref. Pagto de 2 diárias (Fábio)                  1791  113701                              300,00         16.718,06C
+         Valor Ref. Pagto do Estacionamento (Nivus)             5731  113719                               15,00         16.733,06C
+         Valor Ref. Abastec. Nivus                              5724  113727                              100,00         16.833,06C
+         Valor  Ref.  Abastec.  Moto, RE04, RE03 e ADM na APR
+         Combust  c/  as NFCe: 119073, 119431, 119998, 119212
+         e 119258                                                     113778                            1.040,07         17.873,13C
+         Valor Ref. Transf. entre contas                        4535  122939          6.000,00                           11.873,13C
+09/03/24 Valor Ref. Pagto da mão de obra (Diogo)                5919  113697                              800,00         12.673,13C
+         Valor  Ref.  Pagto de 4 Almoços (demolição manual) -
+         R$ 20 cada                                             6280  113760                               80,00         12.753,13C
+         Valor  Ref.  Pagto  do  serviço de lava-jato (Const.
+         Santo Antonio)                                         5552  113832                              350,00         13.103,13C
+         Valor Ref. Adiant. Serv. Prestados (Francisco)         2111  113859                              200,00         13.303,13C
+         Valor Ref. Mantimentos                                 1494  113875                              118,38         13.421,51C
+         Valor Ref. Pagto do Estacionamento (Nivus)             5731  113921                                7,00         13.428,51C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    3
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+09/03/24 Valor   Ref.   Pagto   da  diária  (semana  completa
+         motorista  -  R$  1.200, R$ 200 p/ Jose Wellington e
+         Eduardo Willams e R$ 100 p Eduardo Xavier)             6280  113930                            1.700,00         15.128,51C
+10/03/24 Valor Ref. Refeições                                   1494  113841                               44,08         15.172,59C
+         Valor Ref. Empréstimo (Maynard)                        3777  118311         20.000,00                            4.827,41D
+11/03/24 Valor Ref. Mantimentos                                 1494  113867                               29,85          4.797,56D
+         Valor Ref. Mantimentos                                 1494  113883                               57,90          4.739,66D
+         Valor Ref. Ração animal                                1494  113891                               12,00          4.727,66D
+         Valor Ref. óleo e arroz                                1494  113905                               44,73          4.682,93D
+         Valor Ref. Despesas sócios (Maria dos Anjos)           3174  114090                               13,00          4.669,93D
+         Valor Ref. Despesas sócios (Rebeka Ferreira)           3174  114103                               50,00          4.619,93D
+         Valor Ref. Despesas sócios (Casa Costa Comércio)       3174  114111                               36,70          4.583,23D
+         Valor Ref. Pagto de 8 Almoços (demolição)              5552  114120                              120,00          4.463,23D
+         Valor Ref. Pagto GRRF (Aristide)                       6296  114162                            9.621,63          5.158,40C
+         Valor  Ref.  Pagto Locação de martelo demolidor 10kg
+         (Contrato 067624-01) c/ a Fatura 153376                 827  114171                              520,00          5.678,40C
+         Valor  Ref.  Pagto Locação de martelo demolidor 10kg
+         (Contrato 067176-01) c/ a Fatura 153362                 827  114189                              520,00          6.198,40C
+         Valor  Ref.  Pagto  do  Uber  (Wenderson)  - Curado/
+         Garagem (Francisco)                                    2081  114227                               44,91          6.243,31C
+         Valor Ref. Pagto Honorários (Sotreq) - Parc 8/10       4529  114286                              500,00          6.743,31C
+         Valor Ref. Pagto Acordo Marcosa - Parc 10/11           4104  114316                            2.000,00          8.743,31C
+         Valor  Ref.  Receb BM 046/24 - Breno Campos (Palácio
+         Boa Vista)                                              276  115070            270,00                            8.473,31C
+         Valor Ref. Receb. diária retro (Salvio)                2536  115801          1.300,00                            7.173,31C
+         Valor Ref. Transf. entre contas                        4535  122955         11.000,00                            3.826,69D
+         Valor Ref. Transf. entre contas                        4535  122963          2.000,00                            5.826,69D
+         Valor Ref. Transf. entre contas                        4535  122971          9.000,00                           14.826,69D
+12/03/24 Valor Ref. Pagto de 6 Almoços (demolição)              5552  114201                               90,00         14.736,69D
+         Valor Ref. Mantimentos                                 1494  114219                               24,40         14.712,29D
+         Valor Ref. Mantimentos                                 1494  114235                              112,62         14.599,67D
+         Valor Ref. Mantimentos (verduras)                      1494  114243                               74,30         14.525,37D
+         Valor   Ref.  Pagto  do  Exame  ASO  Admissional  na
+         UltraMed   Saúde   (Equipe  de  Demolição  Manual  -
+         Jardeilson)                                            2721  114251                               49,00         14.476,37D
+         Valor Ref. Mantimentos (farinha de trigo)              1494  114260                                4,69         14.471,68D
+         Valor Ref. Mantimentos (fermento e açúcar)             1494  114278                               10,93         14.460,75D
+         Valor Ref. Mantimentos (carne)                         1494  114294                               99,66         14.361,09D
+         Valor Ref. Pagto Tx IPTU (2024) - Parcela 02/10        2884  114308                              239,37         14.121,72D
+         Valor  Ref.  Compra  de cabeçote de filtro na Trator
+         Parts c/ a NF 37674                                    1784  114332                              250,00         13.871,72D
+         Valor Ref. Pagto NF RCC 1023 - Partemp                 3910  114359                            6.831,31          7.040,41D
+         Valor Ref. Pagto de Uber (Otacílio)                    2721  114375                               13,54          7.026,87D
+         Valor Ref. Pagto dos serviços (RE03)                   1755  114391                              120,00          6.906,87D
+         Valor  Ref.  Pagto  do  serviço  do conserto do pneu
+         (RE04) em Borracharia Recife                           4861  114405                               80,00          6.826,87D
+         Valor Ref. Receb. bm40 Dalla Nora  Flor de Santana      320  115061         12.476,67                           19.303,54D
+13/03/24 Valor Ref. Mantimentos                                 1494  114367                               62,92         19.240,62D
+         Valor  Ref.  Compra  de  carro-pipa  c/  6000 litros
+         (Luis Carlos)                                          2721  114383                              200,00         19.040,62D
+         Valor Ref. Pagto de 9 Almoços (demolição)              5552  114413                              135,00         18.905,62D
+         Valor  Ref.  Pagto  Compra  de 2 pneus na Drive Auto
+         (Regi) c/ a NF 63721 - 3/4                                   114430                              223,09         18.682,53D
+         Valor  Ref. Pagto Compra de graxa azul e óleo GT Max
+         na Vertical c/ a NF 49180 - 2/3                              114464                              256,94         18.425,59D
+         Valor  Ref.  Pagto  Compra  de  relé 12 V e chave de
+         partida na MJ Peças c/ a NF 965                         840  114481                              655,00         17.770,59D
+         Valor  Ref.  Pagto  Aluguel de andaimes, diagonais e
+         plataformas c/a Fatura 91486                            827  114499                              432,00         17.338,59D
+         Valor  Ref.  Abastec. RE04, RE03, Iveco, Nivus, EH01
+         e  Moto  na  APR  Combustiveis  c/  as  NFCe 121218,
+         121252,,121476 - 11/03/24                                    114502                            2.282,89         15.055,70D
+         Valor  Ref.  Abastec. RE04 e ADM na APR Combustiveis
+         c/ as NFCe 206414, 122047 - 12/03/24                         114561                              554,72         14.500,98D
+         Valor Ref. Compra de 4 garrafões (água mineral)        1347  114651                               20,00         14.480,98D
+         Valor Ref. Transf. entre valores p o caixa             4535  116921          4.800,00                           19.280,98D
+14/03/24 Valor Ref. Pagto de 8 Almoços (demolição)              5552  114596                              120,00         19.160,98D
+         Valor  Ref.  Pagto  Compra  de cilindro roda, tambor
+         freio,pastilha  de freio, pivô dianteiro e sapata de
+         freio na Vertical c/ a NF 50442 - 1/3                  2737  114600                              243,30         18.917,68D
+         Valor Ref. Pagto Tx. IPVA 2024 (SNS6B74) - 2/10              114626                              300,74         18.616,94D
+         Valor Ref. Pagto do Uber (Uilramir)                    1755  114642                               12,09         18.604,85D
+         Valor  Ref.  Compra de mangueira (RE03) na Mangoflex
+         c/ a NF 57348                                          1784  114669                              182,00         18.422,85D
+         Valor Ref. Mantimentos (Panificadora União)            1494  114677                               32,00         18.390,85D
+         Valor Ref. Pagto do Uber (Luiz Claudio)                1755  114685                               10,91         18.379,94D
+15/03/24 Valor  Ref.  Pagto  do Exame Admissional (Madson) na
+         Aptmed                                                 2721  114715                               40,00         18.339,94D
+         Valor Ref. Compra de gás de cozinha                    6280  114731                               80,00         18.259,94D
+         Valor  Ref.  Compra  de  coreia  (RE03) no Mundo das
+         Correias c/ a NF 18424                                 1784  114740                              465,00         17.794,94D
+         Valor  Ref.  Pagto de 4 Almoços (demolição manual) -
+         R$ 20 cada                                             6280  114758                               80,00         17.714,94D
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    4
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+15/03/24 Valor Ref. Pagto de 5 Almoços (demolição)              5552  114766                               75,00         17.639,94D
+         Valor Ref. Pagto dos almoços na obra de Rio Formoso    1494  114774                              211,56         17.428,38D
+         Valor Ref. Compra de gás GLP p obra                    6280  114782                               80,00         17.348,38D
+         Valor Ref. Refeições                                   1494  114791                               50,28         17.298,10D
+         Valor Ref. Pagto Tx. IPVA 2024 (PFA1096) - 2/10         796  114812                              170,14         17.127,96D
+         Valor Ref. Pagto de premiação (3 colaboradores)        6280  114821                              300,00         16.827,96D
+         Valor Ref. Pagto de premiação (5 colaboradores)        5552  114839                              500,00         16.327,96D
+         Valor  Ref.  Abastec.  RE01,  RE04  e  RE03  na  APR
+         Combust c/ a NFc 119699 - 08/03/24                           114847                              964,34         15.363,62D
+         Valor  Ref.  Abastec. RE04 e ADM na APR Combust c/ a
+         NFc 120396 e 120208 - 09/03/24                               114880                              391,27         14.972,35D
+         Valor  Ref.  Abastec.  RE04 e RE03 na APR Combust c/
+         as NFcs 122316 e 122092 - 13/03/24                           114910                              900,43         14.071,92D
+         Valor Ref. Conserto de pneu na Borracharia Luiz        4861  114961                              200,00         13.871,92D
+         Valor  Ref. Pagto de 13 diárias x R$ 150 (Francisco)
+         = R$ 1950 (R$ 200 foi adiantado em 09/03/24)           2111  115568                            1.750,00         12.121,92D
+         Valor  Ref.  Pagto  do  Adiant.  Salarial  -  Mar 24
+         (Giselly)                                                    123528                            1.053,00         11.068,92D
+         Valor  Ref.  Pagto  do  Adiant.  Salarial  -  Mar 24
+         (Giselly)                                                    123536                              150,00         10.918,92D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Milton)                                                     123552                            1.053,00          9.865,92D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Milton)                                                     123561                              150,00          9.715,92D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Wellington Jose)                                            123587                            1.446,90          8.269,02D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Wellington Jose)                                            123595                              263,10          8.005,92D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Jamersson)                                                  123617                            1.446,90          6.559,02D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Jamersson)                                                  123625                                9,10          6.549,92D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Wellington H)                                               123641                            1.446,90          5.103,02D
+         Valor  Ref.  Pagto  do  Adiant  Salarial  -  Mar  24
+         (Wellington H)                                               123650                              263,10          4.839,92D
+16/03/24 Valor Ref. Compra de 3 garrafões (água mineral)        1347  114944                               15,00          4.824,92D
+         Valor  Ref.  Pagto das diárias do vigia (Diogénes) -
+         25/02 ate 15/03/24                                     5552  114979                            1.680,00          3.144,92D
+         Valor   Ref.   Pagto   das   diárias   do  motorista
+         (Alexsandro)                                           5552  114987                            1.000,00          2.144,92D
+         Valor Ref. Pagto do lava-jato (Bruno Julião)           5731  114995                               30,00          2.114,92D
+         Valor  Ref.  Receb.  Parcial  da  Locação  da  Retro
+         (Elvis)                                                6304  115002            500,00                            2.614,92D
+18/03/24 Valor Ref. Pagto de 8 Almoços (demolição)              5552  115550                              120,00          2.494,92D
+         Valor Ref. Mantimentos (pães)                          1494  115819                                6,00          2.488,92D
+         Valor  Ref.  Pagto  Aluguel  de 3 martelos demolidor
+         (Contrato 066855) c/a Fatura 153425                     827  115835                            1.840,00            648,92D
+         Valor  Ref.  Pagto  Compra  de 2 pneus na Drive Auto
+         c/a NF 63839 - 3/4                                      767  115843                              221,50            427,42D
+         Valor Ref. Pagto Parcelamento SEFAZ - 5/12             4558  115851                              721,25            293,83C
+         Valor  Ref.  Pagto Compra de óleo deiton e GT max na
+         Vertical c/ a NF 50613 - 1/3                           2737  115860                              287,79            581,62C
+         Valor  Ref.  Pagto Compra de sensor  pressão, filtro
+         seprador  e  filtro lubrificante na MJ Peças c/ a NF
+         974 - 1/2                                               840  115878                              675,00          1.256,62C
+         Valor  Ref.  Pagto  Compra de 6 ponteiros SDS Max p/
+         Obra: Visconde de Jequitinhonha c/ NF 3367              827  115886                              360,00          1.616,62C
+         Valor Ref. Pagto Cartão de Nem                         4794  115894                            5.191,47          6.808,09C
+         Valor Ref. Pagto da multa da obra: Conlusa             3241  115908                            5.563,16         12.371,25C
+         Valor  Ref.  Abastec.  RE04,  RE01, EH01 e Estque na
+         APR  Combust  c/  as  NFcs 122563, 121156 e 122087 -
+         14/03/24                                                     116009                            2.550,09         14.921,34C
+         Valor   Ref.  Abastec.  RE04,  RE03,  Nivus,  ADM  e
+         Montana  na  APR  Combust c/ as NFcs 123262, 123088,
+         123276, 123096 e 206334 - 15/03/24                           116050                            1.634,03         16.555,37C
+         Valor Ref. Transf. entre contas p o caixa              4535  116947         24.600,00                            8.044,63D
+19/03/24 Valor  Ref.  Compra  de  carro-pipa  c/  6000 litros
+         (Luis Carlos)                                          2721  115932                              200,00          7.844,63D
+         Valor Ref. Mantimentos                                 1494  115941                               30,61          7.814,02D
+         Valor Ref. Mantimentos                                 1494  115959                               14,00          7.800,02D
+         Valor Ref. Mantimentos                                 1494  115967                               77,85          7.722,17D
+         Valor Ref. Mantimentos                                 1494  115975                                7,99          7.714,18D
+         Valor Ref. Mantimentos                                 1494  115983                               22,50          7.691,68D
+         Valor Ref. Mantimentos                                 1494  115991                              123,24          7.568,44D
+         Valor Ref. Pagto de 7 Almoços (demolição)              5552  116114                              105,00          7.463,44D
+         Valor Ref. Mantimentos                                 1494  116122                               21,30          7.442,14D
+         Valor Ref. Pagto do Uber (Jessica)                     1755  116190                               15,57          7.426,57D
+         Valor Ref. Compra de caixas de chocolates              3257  116301                               55,00          7.371,57D
+         Valor  Ref.  Pagto  do  almoço  na  obra  (Antonio e
+         Floriano)                                              5919  116319                               87,00          7.284,57D
+20/03/24 Valor Ref. Pagto de 7 Almoços (demolição)              5552  116131                              105,00          7.179,57D
+         Valor  Ref. Pagto do Uber (Josué) - Mj Peças/ Nestor
+         Moreira                                                1755  116149                               15,00          7.164,57D
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    5
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+20/03/24 Valor  Ref.  Compra  de  gás  de  cozinha  e 3 águas
+         minerais                                                     116157                              100,00          7.064,57D
+         Valor  Ref.  Compra de sacos de lixo (1 fardo c/ 100
+         und)                                                   2721  116181                               25,00          7.039,57D
+         Valor Ref. Despesas obras (Serviços Online)            4073  116327                              195,60          6.843,97D
+         Valor Ref. Despesas Mecânico                           1666  116335                              100,00          6.743,97D
+         Valor Ref. Pagto INSS - Comp. 02/2024                  2826  116343                            1.655,70          5.088,27D
+         Valor Ref. Pagto Cartão Hiper (Elza) - Parc. 30/60     3116  116351                              266,72          4.821,55D
+         Valor  Ref.  Pagto  Compra  de  bomba  hidráulica na
+         Rediesel c/ a NF 1019146 - 3/3                         5842  116360                              171,00          4.650,55D
+         Valor   Ref.  Pagto  Compra  de  Kit  reparo,  borda
+         cortante,    parafuso   lâmina,porca   sext,   dente
+         central,  dente lateral, parafuso sext, porca lâmina
+         na MJ Peças c/ a NF 901 - 3/3                           840  116378                            2.560,00          2.090,55D
+         Valor Ref. Pagto Tx. IPVA 2024 (NXU6768) - 2/10         796  116386                               66,08          2.024,47D
+         Valor Ref. Pagto Financ. Nivus - 4/60                  5701  116394                            2.657,39            632,92C
+         Valor  Ref.  Abastec.  RE03,  RE04  e Classic na APR
+         Combustiveis  c/  as  NFCe 124891, 124896 e 124976 -
+         19/03/24                                                     116416                              584,97          1.217,89C
+         Valor  Ref.  Abastec.  RE03,  RE04  e Classic na APR
+         Combustiveis c/ as NFCe 125315 e 126290 - 20/03/24           116459                              682,71          1.900,60C
+         Valor Ref. Transf. entre contas                         158  117196          4.500,00                            2.599,40D
+         Valor Ref. Retirada pró-labore                         3174  117218                               90,00          2.509,40D
+         Valor Ref. Transf. entre contas                         158  117251          1.000,00                            3.509,40D
+         Valor Ref. Pagto produção (CB Badu)                     981  117625                              500,00          3.009,40D
+21/03/24 Valor Ref. Pagto de 8 Almoços (demolição)              5552  116408                              120,00          2.889,40D
+         Valor  Ref.  Compra  de  filé  de  frango,  galinha,
+         toscana e queijo                                       1494  116483                              176,20          2.713,20D
+         Valor  Ref.  Pagto  do  vigia (obra: Baptista Leal -
+         Curado)                                                5919  116491                              800,00          1.913,20D
+         Valor Ref. Pagto do frete (Montana)                    2039  116505                              200,00          1.713,20D
+         Valor Ref. Mantimentos                                 1494  116513                               85,44          1.627,76D
+         Valor Ref. Mantimentos                                 1494  116521                               32,80          1.594,96D
+         Valor Ref. Pagto Acordo (Santander) - parc 17/20       1258  116530                            1.884,13            289,17C
+         Valor  Ref.  Pagto Compra de tela plástica p/ tapume
+         na Ideal Ferro c/ a NF 33580                           3850  116548                              247,00            536,17C
+         Valor  Ref.  Pagto  Compra  de cilindro roda, tambor
+         freio,pastilha  de freio, pivô dianteiro e sapata de
+         freio na Vertical c/ a NF 50442 - 2/3                  2737  116556                              233,30            769,47C
+         Valor  Ref.  Abastec.  JQR2H64, HVC1036, RE03, RE01,
+         RE04,  Moto  na  APR  Combust  c/  as  NFCs  123603,
+         123600,   123490,   123983,206676,,123606   -  16  e
+         17/03/24                                                     116564                            3.196,16          3.965,63C
+         Valor   Ref.   Receb.  bm045/24  fdcx261  tratores  
+         monteplan parnamirim                                    448  116955          3.437,22                              528,41C
+         Valor Ref. Retirada pró-labore                         3174  117200                              500,00          1.028,41C
+         Valor  Ref.  Receb. adiant. parcial (01) - demolição
+         7 de setembro                                          4966  117226          3.000,00                            1.971,59D
+         Valor  Ref.  Receb. adiant. parcial (02) - demolição
+         7 de setembro                                          4966  117234          3.000,00                            4.971,59D
+         Valor  Ref.  Receb. adiant. parcial (03) - demolição
+         7 de setembro                                          4966  117242          3.500,00                            8.471,59D
+22/03/24 Valor Ref. Aluguel de carroça                          6280  116645                               35,00          8.436,59D
+         Valor Ref. Pagto de 4 almoços (demolição)              6333  116653                               60,00          8.376,59D
+         Valor  Ref. Pagto de Uber (Elenilson) - Sto Antonio/
+         7 de setembro                                          6333  116661                               28,00          8.348,59D
+         Valor Ref. Caixa p/ despesas                           5671  116670                              300,00          8.048,59D
+         Valor  Ref.  Pagto  do  serviço de lava-jato (Const.
+         Santo Antonio)                                         5552  116688                              350,00          7.698,59D
+         Valor   Ref.  Pagto  de  Uber  (Elenilson)  -  7  de
+         setembro/ Sto Antonio                                  6333  116696                               40,00          7.658,59D
+         Valor  Ref.  Pagto  do  saldo.50% do fornecimento de
+         BGS (Areia Express)                                    3241  116866                            4.950,00          2.708,59D
+         Valor Ref. Pagto dos juros (MJ Peças)                  1459  116874                               52,05          2.656,54D
+         Valor  Ref.  Pagto  Tx  CIM  (2014  a 2021) - Negoc.
+         (Transp) - parc 26/60                                  2891  116882                              246,07          2.410,47D
+         Valor  Ref. Pagto Serviço de recapagem e conserto de
+         pneu na Dafonte Pneus c/ a NFSe 121942 - 4/4           5629  116891                              968,00          1.442,47D
+         Valor Ref. Pagto de 4 almoços (demolição)              5552  117072                               60,00          1.382,47D
+         Valor Ref. Refeições                                   1494  117188                               82,05          1.300,42D
+         Valor Ref. Transf. entre contas                         158  117269          2.000,00                            3.300,42D
+         Valor Ref. Receb. BM 052/24 - Fokus (Guilherme)        6244  117277         12.934,16                           16.234,58D
+23/03/24 Valor Ref. Pagto do almoço (demolição)                 6333  116963                              140,00         16.094,58D
+         Valor Ref. Pagto de Uber (Evaldo)                      2721  116971                                8,00         16.086,58D
+         Valor Ref. Pagto de Uber (Jorge)                       2721  116980                               10,93         16.075,65D
+         Valor Ref. Pagto de Uber (Jorge)                       2721  116998                               23,42         16.052,23D
+         Valor Ref. Pagto das compras realizadas p as obras     3241  117030                            3.005,26         13.046,97D
+         Valor Ref. Pagto do conserto p/ o mecânico Madson      1614  117064                            1.000,00         12.046,97D
+         Valor Ref. Adiant. salarial (Milton)                   1621  117153                              500,00         11.546,97D
+         Valor Ref. Pagto das diárias (motorista)               5552  117161                            1.000,00         10.546,97D
+         Valor Ref. Pagto de lava-jato                          2721  117170                               45,00         10.501,97D
+24/03/24 Valor Ref. Pagto do Uber (Jose Neilson)                6333  117099                               12,00         10.489,97D
+         Valor Ref. Alimentação na obra                         6333  117102                               63,30         10.426,67D
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    6
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+24/03/24 Valor Ref. Alimentação na obra                         6333  117111                               72,00         10.354,67D
+         Valor Ref. Pagto das diárias (demolição manual)        6333  117129                            1.265,00          9.089,67D
+         Valor Ref. Alimentação na obra                         6333  117137                               15,00          9.074,67D
+         Valor Ref. Alimentação na obra                         6333  117145                               12,00          9.062,67D
+25/03/24 Valor Ref. Ajuda de custo (esposa de Gabriel)          5552  117081                              100,00          8.962,67D
+         Valor Ref. Mantimentos (filé de frango)                1494  117285                               92,90          8.869,77D
+         Valor Ref. Pagto de 4 almoços (demolição)              5552  117293                               60,00          8.809,77D
+         Valor   Ref.   Pagto  de  3  almoços  (demolição)  +
+         despesas de obra                                             117307                               76,90          8.732,87D
+         Valor  Ref.  Compra  de  carro-pipa  c/  6000 litros
+         (Luis Carlos)                                          2721  117331                              200,00          8.532,87D
+         Valor Ref. Pagto produção (CB Ailton)                   974  117374                            8.130,50            402,37D
+         Valor Ref. Pagto da Taxa de removação da CNH (Elza)    2721  117382                              227,36            175,01D
+         Valor Ref. Compra de 4 garrafões (água mineral)        1347  117391                               20,00            155,01D
+         Valor Ref. Pagto Fatura CELPE - 02/2024                 751  117404                            1.028,48            873,47C
+         Valor Ref. Pagto Fatura da TIM - Comp. 02/2024          939  117412                              309,80          1.183,27C
+         Valor  Ref.  Pagto  Compra  de  limpa contatos, óleo
+         deiton,  óleo  GT  Max e white lub na Vertical c/ NF
+         51865 - 1/3                                            2737  117421                              198,02          1.381,29C
+         Valor  Ref.  Pagto  IPTU  (Negociação 2017 a 2021) -
+         Parc 24/36                                             2884  117439                              171,59          1.552,88C
+         Valor  Ref.  Pagto  Compra de basculhamento, tensor,
+         polia,  correia e bucha sub fixação na Rediesel c/ a
+         NF 1018626 - 3/4                                             117455                              886,00          2.438,88C
+         Valor  Ref.  Abastec.  RE02, RE03, RE04 e Classic na
+         APR  Combust  c/  as  NFCs  125310,  125805, 125792,
+         208613 e 208450 - 20 e 21/03/24                              117471                            3.200,38          5.639,26C
+         Valor Ref. Compra de pó de pedra (SJ Transloc)         6280  117536                            2.400,00          8.039,26C
+         Valor Ref. Pagto do Uber (demolição manual)            6340  117544                               55,00          8.094,26C
+         Valor Ref. tranf. para itau                            4535  118818          7.000,00                            1.094,26C
+         Valor Ref. transf. para itau                           4535  118842         50.000,00                           48.905,74D
+26/03/24 Valor  Ref.  Pagto  do  serviço  de manutenção do ar
+         condicionado (Diretoria) - Luciano                     2721  117366                              140,00         48.765,74D
+         Valor Ref. Pagto de 5 almoços (demolição)              5552  117552                               75,00         48.690,74D
+         Valor  Ref.  Pagto  Serviço  de Revisão: 100h, 500h,
+         1000h, 1500h  e 2000h c/ a NFSe 11315 - 6/8                  117943                              499,47         48.191,27D
+         Valor  Ref. Pagto Compra de materiais p/ garantia c/
+         a NF 49004 - 6/8                                             117978                            2.803,70         45.387,57D
+         Valor Ref. Pagto Negoc. BM 22, BM 23 e BM 24 - 2/2      922  117994                            2.771,25         42.616,32D
+         Valor  Ref.  Pagto  Compra do radiador no Palácio do
+         Radiador c/ a NF 11520 - 3/3                                 118010                            1.862,75         40.753,57D
+         Valor  Ref. Pagto Compra de graxa azul e óleo GT Max
+         na Vertical c/ a NF 49180 - 3/3                        2737  118036                              256,09         40.497,48D
+         Valor  Ref.  Pagto  Compra de motor de partida na MJ
+         Peças c/ a NF 986 - 1/2                                 840  118044                              950,00         39.547,48D
+         Valor   Ref.  Abastec.  Nivus,  RE01,  Iveco,  RE03,
+         HVC1036,  JQR2h64  e RE04 na APR Combust c/ as NFCs:
+         126228,  126302,  126257,  126238, 126233 e 126240 -
+         22/03/24                                                     118052                            4.382,77         35.164,71D
+         Valor Ref. Pagto produção (CB Jean)                    1130  118150                           13.402,84         21.761,87D
+         Valor  Ref. Pagto Partic. João (Vanessa) - De acordo
+         c/ BM03 (Curado)                                       6103  118168                            8.424,79         13.337,08D
+27/03/24 Valor Ref. Compra de paver (Val Lajes)                 6280  118176                            2.160,00         11.177,08D
+         Valor  Ref.  Pagto  do  vigia (obra: Baptista Leal -
+         Curado)                                                5919  118184                              800,00         10.377,08D
+         Valor  Ref. Compra de sacos de lixo (2 fardos c/ 100
+         und)                                                   2721  118192                               50,00         10.327,08D
+         Valor Ref. Mantimentos                                 1494  118206                               18,77         10.308,31D
+         Valor Ref. Mantimentos                                 1494  118214                              115,26         10.193,05D
+         Valor Ref. Pagto de 6 almoços (demolição)              5552  118222                               90,00         10.103,05D
+         Valor  Ref.  Adiant parcial da compra de fardamentos
+         (Tony Edson)                                           2721  118231                            1.000,00          9.103,05D
+         Valor  Ref.  Pagto do saldo da compra de fardamentos
+         (Tony Edson)                                           2721  118257                              630,00          8.473,05D
+         Valor   Ref.   Pagto   do   sinal  dos  bordados  de
+         fardamentos (Jailton)                                  2721  118265                              100,00          8.373,05D
+         Valor  Ref.  Pagto  do  sinal  da serigrafia da gola
+         careca (Eliel Batista)                                 2721  118273                              100,00          8.273,05D
+         Valor Ref. Devolução Empréstimo (Maynard)              3777  118320                           20.000,00         11.726,95C
+         Valor  Ref.  Pagto  Tx CIM (2024) - 1º semestre (AJR
+         Transp) - Parc 1/2                                     2891  118338                              787,46         12.514,41C
+         Valor  Ref.  Pagto  Tx CIM (2024) - 1º semestre (AJR
+         Tratores) - Parc 1/2                                   2891  118346                              503,84         13.018,25C
+         Valor  Ref.  Pagto  Serviço  de Revisão: 100h, 500h,
+         1000h, 1500h  e 2000h c/ a NFSe 11315 - 7/8            5049  118354                              466,72         13.484,97C
+         Valor  Ref. Pagto Compra de materiais p/ garantia c/
+         a NF 49004 - 7/8                                       5049  118362                            2.619,83         16.104,80C
+         Valor  Ref.  Pagto Compra de cabo PP, tomada macho e
+         fêmea e fita isolante na Mafema c/ a NF 147617 - 1/2   6238  118371                              587,65         16.692,45C
+         Valor  Ref.  Pagto  Compra  de  filtro  lubrificante
+         (RE03) na MJ Peças c/ a NF 1009                         840  118389                              175,00         16.867,45C
+         Valor  Ref.  Pagto  Aluguel  da  placa  compactadora
+         (Contrato 068319) c/a Fatura 153699                     827  118397                              350,00         17.217,45C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 01/03/24 ATÉ 31/03/24    PAG.    7
+                                                                                                         Data de Emissão : 17/04/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+           81  1.1.01.02              BANCOS                                  
+CONTA:    187  1.1.01.02.01           Banco Itau - Junior                                          - continuação
+27/03/24 Valor  Ref.  Abastec.  RE02 e RE04 na APR Combust c/
+         as NFCs 125882 e 126932 - 23/03/24                           118401                              692,63         17.910,08C
+         Valor  Ref.  Abastec.  RE03,  RE04  e  EH01  na  APR
+         Combust  c/  as  NFCs  128227,  128231  e  128246  -
+         26/03/24                                                     118435                            2.149,77         20.059,85C
+         Valor Ref. receb. bm 057/24 brteno p. madalena          276  118931          4.137,75                           15.922,10C
+         Valor Ref. receb. bm 53 breno nestor moreirra           276  118940         31.625,00                           15.702,90D
+28/03/24 Valor Ref. Despesas Cx                                 5671  118281                               25,00         15.677,90D
+         Valor Ref. Pagto de 6 almoços (demolição)              5552  118303                               90,00         15.587,90D
+         Valor  Ref. Pagto do serviço de cromagem de cilindro
+         na TM Loc c/ a NFSe 3744                               1608  118478                              550,00         15.037,90D
+         Valor Ref. Pagto do Financiamento da JCB - Parc 8/57         118494                           11.382,31          3.655,59D
+         Valor Ref. Pagto de 11 diárias x R$ 150 (Francisco)    2111  118575                            1.650,00          2.005,59D
+         Valor Ref. Pagto das diárias (Edjane)                  3241  118583                              500,00          1.505,59D
+         Valor Ref. Pagto das diárias (Wanderson)               3241  118591                              500,00          1.005,59D
+         Valor Ref. Pagto das diárias (Leticia)                 3241  118605                            1.000,00              5,59D
+         Valor Ref. Pagto das diárias (Vinicius)                3241  118613                              500,00            494,41C
+         Valor Ref. Desp. ADM (Márcia Alexandre)                2721  118621                              126,00            620,41C
+         Valor Ref. Pagto produção (João Aprigio)                     118630                            4.071,04          4.691,45C
+         Valor Ref. Compra na farmácia                          2721  118648                               39,40          4.730,85C
+         Valor Ref. Mantimentos                                 1494  118656                              254,38          4.985,23C
+         Valor Ref. Mantimentos (peixe)                         1494  118664                              167,00          5.152,23C
+         Valor Ref. Mantimentos (2 cocos)                       1494  118672                                8,00          5.160,23C
+         Valor Ref. Mantimentos (verduras)                      1494  118681                              103,95          5.264,18C
+         Valor Ref. Retirada Pró-labore                         3174  118699                           13.900,00         19.164,18C
+         Valor Ref. Pagto produção (CB Nem)                     5322  118702                           10.517,09         29.681,27C
+         Valor Ref. Pagto do serviço na Montana (Erildo)        2051  118711                              150,00         29.831,27C
+         Valor  Ref.  Pagto  da  compra  de fardamentos (Tony
+         Edson)                                                 2721  118729                              200,00         30.031,27C
+         Valor  Ref.  Pagto  PGFN  -  SISPAR: 005842235 Comp.
+         03/2024 - Parc 26/67                                   3464  118737                              125,65         30.156,92C
+         Valor  Ref.  Pagto  Compra  de cilindro roda, tambor
+         freio,pastilha  de freio, pivô dianteiro e sapata de
+         freio na Vertical c/ a NF 50442 - 3/3                  2737  118745                              233,30         30.390,22C
+         Valor  Ref. Pagto BM 25 e Recibo 2651 - Rastreamento
+         EMLURB                                                  922  118753                              495,00         30.885,22C
+         Valor Ref. Aporte financeiro                           1287  118761          4.000,00                           26.885,22C
+         Valor  Ref.  Pagto  do  serviço de lava-jato (Const.
+         Santo Antonio)                                         5552  118770                              350,00         27.235,22C
+         Valor  Ref.  Pagto  Negoc. da indenização do martelo
+         rompedor de 30kg da Locape c/ a Fatura 153491 - 1/5     827  119024                            2.000,00         29.235,22C
+         Valor  Ref.  Pagto Compra de kir reparo, oleo eixo e
+         oleo de freio da MJ Peças c/ a NF 991 - 1/2             840  119032                              960,00         30.195,22C
+         Valor  Ref.  Pagto  BM  25  e  NFSe 1499 - Rastream.
+         EMLURB                                                  922  119041                            1.352,50         31.547,72C
+         Valor Ref. Aporte financeiro                           1287  119164            500,00                           31.047,72C
+         Valor Ref. Pagto do Uber (Manuel)                      5552  119172                               45,31         31.093,03C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Giselly)                                                    119385                              884,64         31.977,67C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Fev  24
+         (Giselly)                                                    119393                            1.088,17         33.065,84C
+         Valor Ref. Pagto do Saldo Salarial - Mar 24 (Milton)         119415                              884,64         33.950,48C
+         Valor Ref. Pagto do Saldo Salarial - Mar 24 (Milton)         119423                            1.128,21         35.078,69C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Wellington Jose)                                            119440                            1.200,83         36.279,52C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Wellington Jose)                                            119458                            1.691,74         37.971,26C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Jamersson)                                                  119474                            1.200,83         39.172,09C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Jamersson)                                                  119482                            1.339,23         40.511,32C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Wellington Herc)                                            119504                            1.200,83         41.712,15C
+         Valor   Ref.  Pagto  do  Saldo  Salarial  -  Mar  24
+         (Wellington Herc)                                            119512                            2.653,46         44.365,61C
+29/03/24 Valor Ref. Antonio Pereira da Silva Neto               5919  119113                            5.000,00         49.365,61C
+         Valor   Ref.   Pagto   do   serviço   de   motorista
+         (Alexsandro)                                                 119121                            2.100,00         51.465,61C
+         Valor Ref. Aporte financeiro                           1287  119156          2.500,00                           48.965,61C
+30/03/24 Valor Ref. Pagto Refeição (Roseane)                    6333  119059                               98,00         49.063,61C
+         Valor Ref. Compra na Palma Parafusos c/ a NFC 204695   4861  119105                              181,44         49.245,05C
+         Valor Ref. Compra de areia                             6280  119181                              160,00         49.405,05C
+31/03/24 Valor Ref. Aporte financeiro                           1287  119067          1.200,00                           48.205,05C
+         Valor  Ref.  Pagto  das diárias e almoços (demolição
+         manual)                                                6333  119075                            1.115,00         49.320,05C
+         Valor Ref. Refeição                                    6333  119083                                4,00         49.324,05C
+         Valor Ref. Refeições                                   6333  119091                               59,20         49.383,25C
+                                                                  TOTAIS =          335.501,30        381.419,37         49.383,25C
+*************************************************************
+                                                             **
+                                                               **
+                                                                 **
+                                                                   **
+                                                                     **
+                                                                       *************************************************************
+

@@ -1,0 +1,23 @@
+*  PAGAMENTO DA CONTA D'AGUA
+T
+t      LAN€AMENTO DA CONTA D'AGUA
+T
+T    Data da Apropria‡„o... {d1    }
+t    Data do Pagamento .... {d2    }
+t    Mes de Referˆncia .... {t1    }
+t    Conta de Pagamento ... {c1    }
+t    Valor total ...................... {v1                 }
+t      Depto. de Produ‡„o    50%  ..... [v2                 ]
+t      Depto. de Vendas      20%  ..... [v3                 ]
+t      Depto. Administrativo 30%  ..... [v4                 ]
+fv4=v1*0.30
+fv3=v1*0.20
+fv2=v1-(v3+v4)
+t
+ld1,0,5530,v1,157,t1
+ld1,4021,0,v2,157,t1
+ld1,4469,0,v3,157,t1
+ld1,4890,0,v4,157,t1
+ld2,5530,c1,v1,181,t1
+ 
+ 

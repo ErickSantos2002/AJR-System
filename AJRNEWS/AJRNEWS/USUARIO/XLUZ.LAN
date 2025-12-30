@@ -1,0 +1,23 @@
+*  PAGAMENTO DA CONTA ENERGIA ELêTRICA
+T
+T      LANÄAMENTO DA CONTA DE LUZ
+T
+T    Data da ApropriaáÑo... {d1    }
+t    Data do Pagamento .... {d2    }
+t    Mes de Referància .... {t1    }
+t    Conta de Pagamento ... {c1    }
+t    Valor total ...................... {v1                 }
+t      Depto. de ProduáÑo    50%  ..... [v2                 ]
+t      Depto. de Vendas      20%  ..... [v3                 ]
+t      Depto. Administrativo 30%  ..... [v4                 ]
+t
+fv2=v1*0.50
+fv3=V1*0.20
+Fv4=v1-(v2+v3)
+t
+ld1,0,5552,v1,161,t1
+ld1,4015,0,v2,161,t1
+ld1,4452,0,v3,161,t1
+ld1,4883,0,v4,161,t1
+ld2,5552,c1,v1,195,t1
+ 

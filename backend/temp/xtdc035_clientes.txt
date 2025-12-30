@@ -1,0 +1,72 @@
+CLIENTES EXTRAÍDOS
+================================================================================
+
+ABTEC Eng - FORNECEDOR
+AF Construoes - FORNECEDOR
+AGR Ambiental - CLIENTE
+Amintas - FORNECEDOR
+BCEI - FORNECEDOR
+Baptista Leal - FORNECEDOR
+Barbosa Pinto - FORNECEDOR
+Betel - FORNECEDOR
+Breno Campos - CLIENTE
+Brooks Engenharia - FORNECEDOR
+CTI - FORNECEDOR
+CTM Colegio - FORNECEDOR
+Carlos Gilberto - FORNECEDOR
+Ceasa - FORNECEDOR
+Centerloc - FORNECEDOR
+Chemical - FORNECEDOR
+Conlusa - FORNECEDOR
+Consenco - FORNECEDOR
+Contrel - FORNECEDOR
+Coqueiral Park - FORNECEDOR
+Dalla Nora - CLIENTE
+Disnove - FORNECEDOR
+Domini - FORNECEDOR
+Dr. Boia - FORNECEDOR
+Edielson - FORNECEDOR
+Everton FPS - FORNECEDOR
+Fokus - FORNECEDOR
+GJ Engenharia - FORNECEDOR
+Giros - FORNECEDOR
+HBR Engenharia - FORNECEDOR
+Igreja Adventista - FORNECEDOR
+Inconcal - FORNECEDOR
+JMA - CLIENTE
+JMA Construes - CLIENTE
+LM Saraiva - FORNECEDOR
+LQM Engenharia - FORNECEDOR
+Lira Junior - FORNECEDOR
+Lojo dos Presentes - FORNECEDOR
+Luciano Resende - FORNECEDOR
+Luiz - So Judas Tadeu - FORNECEDOR
+MXN Engenharia - FORNECEDOR
+Maring - FORNECEDOR
+Marsou Eng - FORNECEDOR
+Max Plural - FORNECEDOR
+Menezes - FORNECEDOR
+Monteplan - FORNECEDOR
+Moreira - FORNECEDOR
+Navera - FORNECEDOR
+New Home - FORNECEDOR
+NorteSul - FORNECEDOR
+Parvi - FORNECEDOR
+Poupec - FORNECEDOR
+Precisa Engenharia - FORNECEDOR
+Prisma - FORNECEDOR
+Quartzolit - FORNECEDOR
+RELOC - FORNECEDOR
+Recibom - FORNECEDOR
+Reforma Recife - FORNECEDOR
+Rodolfo Aguiar - FORNECEDOR
+Rodrigo Campos - FORNECEDOR
+Santo Antonio - FORNECEDOR
+Stil Terraplenagem - FORNECEDOR
+Supermix - CLIENTE
+Tibagi - FORNECEDOR
+Tondello - FORNECEDOR
+UTR Paulista - FORNECEDOR
+Universo - FORNECEDOR
+Vaga Engenharia - FORNECEDOR
+Vizir Engenharia - FORNECEDOR

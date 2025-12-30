@@ -1,0 +1,200 @@
+WK Sistemas - Demonstração                                                 PLANO DE CONTAS  DATA: 13/03/08  HORA: 21:32 FOLHA:   1
+
+  CONTA T     CLASSIFICAÇÄO           NOME DA CONTA
+
+     17 T     1                       A T I V O                               
+     23 T     1.1                       ATIVO CIRCULANTE                        
+     30 T     1.1.01                      DISPONIVEL                              
+     46 T     1.1.01.01                     CAIXA                                   
+     52       1.1.01.01.01                    Caixa                                   
+     69       1.1.01.01.02                    Numerários em transito                  
+     75 T     1.1.01.02                     BANCOS CONTA MOVIMENTO                  
+     81       1.1.01.02.01                    Banco Auroso S/A                        
+     98       1.1.01.02.02                    Banco Prateado S/A                      
+    106 T     1.1.01.03                     APLICAÇÕES DE LIQUIDEZ IMEDIATA         
+    112       1.1.01.03.01                    Banco Auroso S/A                        
+    129       1.1.01.03.02                    Banco Prateado S/A                      
+    135 T     1.1.02                      CRÉDITOS OPERACIONAIS                   
+    141 T     1.1.02.01                     DUPLICATAS A RECEBER - CLIENTES         
+    158       1.1.02.01.01                    Atlas Beneficiamento Ltda               
+    164       1.1.02.01.01                    Cacofap S/A                             
+    171       1.1.02.01.01                    Casa da Banana Ltda                     
+    187       1.1.02.01.01                    Corretora de Seguros Inseguros Ltda     
+    193       1.1.02.01.01                    Fábrica de Sebo Sabão Ltda              
+    201       1.1.02.01.01                    Geronimo Investimentos S/C Ltda         
+    218       1.1.02.01.01                    Hércules Contabilidade Ltda             
+    224       1.1.02.01.01                    Instaladora Elétrica Raios S/A          
+    231       1.1.02.01.01                    JB Tango & Cia Ltda                     
+    247       1.1.02.01.01                    Latoaria Enlata Lata Ltda               
+    253       1.1.02.01.01                    Madereira Cupim Ltda                    
+    260       1.1.02.01.01                    Oficina Mecanica Vira Brequim Ltda      
+    276       1.1.02.01.01                    Quitanda do Jose Ltda                   
+    282       1.1.02.01.01                    Sistemaco Sistemas S/C Ltda             
+   5581       1.1.02.01.01                    XT Empreendimentos Ltda.                
+    299 T     1.1.02.02                     (-) DUPLICATAS DESCONTADAS              
+    307       1.1.02.02.01                    Banco Auroso S/A                        
+    313       1.1.02.02.02                    Banco Prateado S/A                      
+    320 T     1.1.02.03                     (-) PROVISAO PARA CRÉDITOS DE LIQ.DUVID.
+    342       1.1.02.03.01                    (-) Cheques                             
+    336       1.1.02.03.01                    (-) Clientes                            
+    359       1.1.02.03.01                    (-) Fornecedores Conta Adiantamentos    
+    365 T     1.1.02.04                     SAQUES DE EXPORTAÇAO                    
+    371 T     1.1.02.05                     SAQUES DE EXPORTAÇAO DESCONTADOS        
+    388 T     1.1.03                      OUTROS CREDITOS                         
+    394 T     1.1.03.01                     TíTULOS A RECEBER                       
+    402 T     1.1.03.01.01                    CLIENTES                                
+    419 T     1.1.03.01.02                    DEVEDORES MOBILIARIOS                   
+    425 T     1.1.03.01.03                    EMPRÉSTIMOS A RECEBER DE TERCEIROS      
+    431 T     1.1.03.02                     CHEQUES EM COBRAÇA                      
+    448 T     1.1.03.03                     BANCOS CONTA VINCULADA                  
+    454 T     1.1.03.04                     ADIANTAMENTOS A TERCEIROS               
+    461 T     1.1.03.05                     DIVIDENDOS PROPOSTOS A RECEBER          
+    477 T     1.1.03.07                     CRÉDITOS DE FUNCIONÁRIOS                
+    490       1.1.03.07.01                    Adiantamentos para Despesas             
+    483       1.1.03.07.01                    Adiantamentos para Viagens              
+    521       1.1.03.07.01                    Antecipações de 13. salário             
+    508       1.1.03.07.01                    Antecipações de Salários e Ordenados    
+    537       1.1.03.07.01                    Antecipações de férias                  
+    514       1.1.03.07.01                    Empréstimos a funcionários              
+    543       1.1.03.07.01                    INSS sobre 13 salário a Recuperar       
+    550 T     1.1.03.08                     IMPOSTOS A RECUPERAR                    
+    566       1.1.03.08.01                    I.C.M.S. a Compensar                    
+    572       1.1.03.08.02                    I.C.M.S. s/ Demonstração                
+    589       1.1.03.08.03                    I.P.I. a Compensar                      
+    595       1.1.03.08.04                    I.R.R.F. a Copensar                     
+    603       1.1.03.08.05                    Outros Impostos a Recuperar             
+    610 T     1.1.03.09                     DEPOSITOS REST. E VALORES VINCULADOS    
+    626 T     1.1.03.10                     PROVISAO PARA CRÉDITOS DE LIQUIDAÇAO DUV
+    632 T     1.1.03.11                     PROVISAO PARA PERDAS                    
+    649 T     1.1.04                      INVESTIMENTOS TEMPORÁRIOS               
+    655 T     1.1.04.01                     INVESTIMENTOS TEMPORÁRIOS               
+    661       1.1.04.01.01                    Títulos e Valores Mobiliários           
+    678       1.1.04.01.02                    Provisão para redução ao valor de mercad
+    684 T     1.1.05                      ESTOQUES                                
+    691 T     1.1.05.02                     ESTOQUES                                
+    709       1.1.05.02.01                    Matéria Prima                           
+    715       1.1.05.02.02                    Material Secundario                     
+    721       1.1.05.02.03                    Material de Embalagem                   
+    738       1.1.05.02.04                    Mercadorias para Revenda                
+    744       1.1.05.02.05                    Produtos Acabados                       
+    751       1.1.05.02.06                    Produtos em Elaboração                  
+    767       1.1.05.02.07                    Importações em Andamento                
+    773       1.1.05.02.08                    Adiantamento a Fornecedores             
+    780       1.1.05.02.09                    Provisão para Redução ao Valor de Mercad
+    796       1.1.05.02.10                    Provisão para Perdas em Estoques        
+    811       1.1.05.02.11                    Almoxarifado                            
+    804       1.1.05.02.11                    Manutenção e Suprimentos Gerais         
+WK Sistemas - Demonstração                                                 PLANO DE CONTAS  DATA: 13/03/08  HORA: 21:32 FOLHA:   2
+
+  CONTA T     CLASSIFICAÇÄO           NOME DA CONTA
+
+    827 T     1.1.06                      DESPESAS DE EXERCICIOS SEGUINTES PAGAS A
+    833       1.1.06.01                     Prêmios de Seguros a Apropriar          
+    840       1.1.06.02                     Encargos Financeiros a Apropriar        
+    856       1.1.06.03                     Assinaturas e Anuidades a Apropriar     
+    862       1.1.06.04                     Comissões e Prêmios Pagos Antecipados   
+    879       1.1.06.05                     Outros Custos e Despesas Pagas Antecipad
+    885 T     1.2                       ATIVO REALIZAVEL A LONGO PRAZO          
+    891 T     1.2.01                      CRÉDITOS E VALORES                      
+    900 T     1.2.01.01                     CONSORCIOS                              
+    916       1.2.01.01.01                    Consórcio Nacional Volkswagen           
+    922 T     1.2.01.02                     EMPRÉSTIMOS COMPULSORIOS                
+    939       1.2.01.02.01                    Empréstimo Compulsório sobre Combustívei
+    945 T     1.2.01.03                     BANCOS CONTA MOVIMENTO                  
+    951 T     1.2.01.04                     CONTAS A RECEBER                        
+    968 T     1.2.01.05                     TITULOS A RECEBER                       
+    974 T     1.2.01.06                     CRÉDITOS DE ACIONISTAS                  
+    981 T     1.2.01.07                     CRÉDITOS DE DIRETORES                   
+    997 T     1.2.01.08                     CRÉDITOS DE COLIGADAS E CONTROLADAS     
+   1005 T     1.2.01.09                     ADIANTAMENTOS A TERCEIROS               
+   1011 T     1.2.01.10                     PROVISAO PARA DEVEDORES DUVIDOSOS       
+   1028 T     1.2.01.11                     IMPOSTOS A RECUPERAR                    
+   1034 T     1.2.01.12                     EMPRÉSTIMOS FEITOS C/ INCENTIVOS FISCAIS
+   1041 T     1.2.01.13                     DEPOSITOS RESTITUIVEIS E VALORES VINCULA
+   1057 T     1.2.01.14                     PROVISAO PARA PERDAS                    
+   1063 T     1.2.02                      INVESTIMENTOS TEMPORÁRIOS A LONGO PRAZO 
+   1070 T     1.2.02.01                     TITULOS E VALORES MOBILIÁRIOS           
+   1086 T     1.2.02.02                     DEPOSITOS P/ INVESTIMENTOS COM INCENTIVO
+   1092       1.2.02.02.01                    FINOR                                   
+   1101       1.2.02.02.02                    FINAM                                   
+   1117       1.2.02.02.03                    FISET                                   
+   1123 T     1.2.02.03                     PARTICIPAÇÕES EM FUNDOS DE INVESTIMENTOS
+   1130       1.2.02.03.01                    FINOR                                   
+   1146       1.2.02.03.02                    FINAM                                   
+   1152       1.2.02.03.03                    FISET                                   
+   1169 T     1.2.02.04                     PARTICIPAÇÕES NO PERMANENTE OUTRAS EMPR.
+   1175 T     1.2.02.05                     PROVISAO PARA PERDAS                    
+   1181 T     1.2.02.06                     PROVISAO PARA REDUÇAO AO VALOR DE MERCAD
+   1198 T     1.2.03                      DESPESAS ANTECIPADAS                    
+   1206       1.2.03.01                     Prêmios de Seguros a Apropriar Longo Pra
+   1212       1.2.03.02                     Imposto de Renda Diferido               
+   1229 T     1.3                       ATIVO PERMANENTE                        
+   1235 T     1.3.01                      INVESTIMENTOS                           
+   1241 T     1.3.01.01                     PARTICIPAÇÕES PERMANENTES               
+   1258 T     1.3.01.01.01                    AVALIADAS PELO METODO DE EQUIVALENCIA PA
+   1264       1.3.01.01.01.01                   Valor da Equivalencia Patrimonial       
+   1271       1.3.01.01.01.02                   Agio ou Desagio dos Investimentos menos 
+   1287       1.3.01.01.01.03                   Provisão para Perdas Permanentes        
+   1293 T     1.3.01.01.02                    AVALIADAS PELO METODO DE CUSTO          
+   1301       1.3.01.01.02.01                   Participações em Sociedades Controladas 
+   1318       1.3.01.01.02.02                   Participações em Outras Empresas        
+   1324       1.3.01.01.02.03                   Participações em Fundos de Investimentos
+   1331       1.3.01.01.02.04                   Provisão para Perdas Permanentes        
+   1347 T     1.3.01.02                     OUTROS INVESTIMENTOS PERMANENTES        
+   1353       1.3.01.02.01                    Obras de Arte                           
+   1360       1.3.01.02.02                    Terrenos e Imóveis p/ Futura Utilização 
+   1376       1.3.01.02.03                    Imóveis Não de Uso                      
+   1382       1.3.01.02.04                    Provisão para Perdas Permanentes        
+   1399       1.3.01.02.05                    Depreciação Acumulada Corrigida         
+   1407 T     1.3.02                      ATIVO IMOBILIZADO                       
+   1413 T     1.3.02.01                     BENS IMOVEIS                            
+   1420       1.3.02.01.01                    Terrenos                                
+   1436       1.3.02.01.02                    Edificações e Prédios                   
+   1442       1.3.02.01.03                    Benfeitorias                            
+   1459       1.3.02.01.04                    Instalações                             
+   1465 T     1.3.02.02                     BENS MOVEIS                             
+   1471       1.3.02.02.01                    Instalações Industriais                 
+   1488       1.3.02.02.02                    Máquinas e Equipamentos                 
+   1494       1.3.02.02.03                    Móveis e Utensílios                     
+   1502       1.3.02.02.04                    Veículos                                
+   1519       1.3.02.02.05                    Tratores                                
+   1525       1.3.02.02.06                    Marcas e Patentes                       
+   1531 T     1.3.02.03                     BENS INTANGIVEIS                        
+   1548       1.3.02.03.01                    Direitos de Uso de Telefone             
+   1554 T     1.3.02.04                     (-) DEPRECIACAO, AMORTIZACAO E EXAUSTAO 
+   1561       1.3.02.04.01                    Depr. Edifícios e Prédios               
+   1577       1.3.02.04.02                    Depr. Benfeitorias                      
+   1583       1.3.02.04.03                    Depr. Instalações                       
+   1590       1.3.02.04.04                    Depr. Instalações Industriais           
+   1608       1.3.02.04.05                    Depr. Máquinas e Equipamentos           
+   1614       1.3.02.04.06                    Depr. Móveis e Utensílios               
+   1621       1.3.02.04.07                    Depr. Veículos                          
+   1637       1.3.02.04.08                    Depr. Tratores                          
+WK Sistemas - Demonstração                                                 PLANO DE CONTAS  DATA: 13/03/08  HORA: 21:32 FOLHA:   3
+
+  CONTA T     CLASSIFICAÇÄO           NOME DA CONTA
+
+   1643 T     1.3.02.05                     IMOBILIZADO EM ANDAMENTO                
+   1650       1.3.02.05.01                    Bens em uso na Fase de Implantação      
+   1666       1.3.02.05.02                    Construções em Andamento                
+   1672       1.3.02.05.03                    Importações em Andamento de Bens do Imov
+   1689       1.3.02.05.04                    Adiantamentos para Inversões Fiscais    
+   1695       1.3.02.05.04                    Almoxarifado de Inversões Fixas         
+   1703 T     1.3.03                      DIFERIDO                                
+   1710 T     1.3.03.01                     DEPESAS PRÉ-OPERACIONAIS                
+   1726       1.3.03.01.01                    Despesas de Organização e Administração 
+   1732       1.3.03.01.02                    Encargos Financeiros Líquidos           
+   1749       1.3.03.01.03                    Estudos, Projetos e Detalhamentos       
+   1755       1.3.03.01.04                    Juros a Acionistas na Fase Implantação  
+   1761       1.3.03.01.05                    Gastos preliminares de Operação         
+   1778       1.3.03.01.06                    Amortização Acumulada                   
+   1784 T     1.3.03.02                     PESQUISA E DESENVOLVIMENTO DE PRODUTOS  
+   1809       1.3.03.02.01                    Amortização Acumulada                   
+   1791       1.3.03.02.01                    Custo                                   
+   1815 T     1.3.03.03                     GASTOS DE IMPLANTAÇAO DE SISTEMAS E MÉT.
+   1821       1.3.03.03.01                    Custo                                   
+   1838       1.3.03.03.02                    Amortização Acumulada                   
+   1844 T     1.3.03.04                     GASTOS DE REORGANIZAÇAO                 
+   1851       1.3.03.04.01                    Custo                                   
+   1867       1.3.03.04.02                    Amortização Acumulada                   
+

@@ -1,0 +1,13 @@
+*  VENDA DE MERCADORIAS
+T
+T
+T  Data:               {  D1       }
+T  Nr. Nota Fiscas:    {  N1       }
+T  Valor Nota Fiscal:  {  V1       }
+T
+LD1,52,3079,V1,410,N1
+FV2=V1*0.17
+LD1,3241,2128,V2,443,N1
+ 
+ 
+ 

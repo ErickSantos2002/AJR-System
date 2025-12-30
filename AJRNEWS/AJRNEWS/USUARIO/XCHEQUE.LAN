@@ -1,0 +1,14 @@
+*  LAN€AMENTO DE CHEQUES EMITIDOS
+T
+T    DATA DE EMISSŽO ........{D1    }
+T    CONTA DO BANCO .........{C1    }
+T    NUMERO DO CHEQUE .......{N1    }
+T    VALOR DO CHEQUE ........{V1              }
+t    TIPO DE PAGAMENTO ......{T1                            }  **
+T    NUMERO DO DOCUMENTO ....{N2              }
+T    CONTA DO FORNECEDOR ....{C2    }
+T
+t  ** TIPO DE PAGAMENTO = FATURA, DUPLICATA, NOTA FISCAL, ETC.
+T
+LD1,C2,C1,V1,602,n1,T1,N2
+ 

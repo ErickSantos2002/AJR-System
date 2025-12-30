@@ -1,0 +1,23 @@
+CENTROS DE CUSTO EXTRAÍDOS
+================================================================================
+
+CC0001 - Combustiveis - EH CAT
+CC0002 - Combustiveis - RE CAT
+CC0003 - Diversos - EH CAT
+CC0004 - Diversos - RE CAT
+CC0005 - Encargos Sociais - EH CAT
+CC0006 - Encargos Sociais - RE CAT
+CC0007 - FGTS
+CC0008 - INSS
+CC0009 - Impostos Federais
+CC0010 - Lubrificantes - EH CAT
+CC0011 - Lubrificantes - RE CAT
+CC0012 - Manuteno - EH CAT
+CC0013 - Manuteno - RE CAT
+CC0014 - Material de Expediente
+CC0015 - Mo de obra - EH CAT
+CC0016 - Mo de obra - RE CAT
+CC0017 - Produo - EH CAT
+CC0018 - Produo - RE CAT
+CC0019 - Servios Prestados - EH CAT
+CC0020 - Servios Prestados - RE CAT

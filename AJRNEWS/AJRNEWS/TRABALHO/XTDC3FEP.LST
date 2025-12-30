@@ -1,0 +1,376 @@
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    1
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         3151  2.1.02.01              CAÇAMBEIROS                             
+CONTA:    974  2.1.02.01.01           CB Ailton                                                   
+         SALDO ANTERIOR                                                                                                   4.870,00C
+15/08/24 Valor   Ref.  prod  cb  ailton  04agr  01bf  padaria
+         rosarinho                                              6280  160083                            1.080,00          5.950,00C
+16/08/24 Valor Ref. prod cb ailton 03bf padaria rosarinho       6280  160113                              600,00          6.550,00C
+         Valor Ref. prod cb ailton 2bf dona anuciada            7433  160156                              400,00          6.950,00C
+17/08/24 Valor  Ref.  prod  cb  ailton  04agr 02bf max plural
+         veiga                                                  6340  160199                            1.280,00          8.230,00C
+19/08/24 Valor Ref. prod cb ailton 03bf max plural veiga        6340  160784                              600,00          8.830,00C
+20/08/24 Valor  Ref.  ,prod  cb  ailton  04agr  01bf  palacio
+         rosarinho                                              2298  161268                            1.080,00          9.910,00C
+21/08/24 Valor Ref. prod cb ailton 02agr palacio rosarinho      2298  161527                              440,00         10.350,00C
+23/08/24 Valor Ref. Pagto da produção (CB Ailton)                187  162094          6.950,00                            3.400,00C
+         Valor Ref. prod cb ailton 01agr dom sebastiao leme     7172  162159                              220,00          3.620,00C
+         Valor Ref. prod cb ailton 04bf inconcal                6758  162191                              800,00          4.420,00C
+24/08/24 Valor Ref. prod cb ailton 05bf piedade                 5990  164135                            1.000,00          5.420,00C
+26/08/24 Valor Ref. prod cb ailton 01bf 04agr tecla             6356  168092                            1.080,00          6.500,00C
+27/08/24 Valor Ref. prod cb ailton 04bf incomcal                6758  168009                              800,00          7.300,00C
+         Valor Ref. prod cb ailton 02bf forme vila popula       7479  168025                              400,00          7.700,00C
+28/08/24 Valor Ref. prod cb ailton 05bf forme vila popular      7479  169013                            1.000,00          8.700,00C
+29/08/24 Valor   Ref.  prod  cb  ailton  03agr  01bf  estrada
+         encanamento                                            7456  169447                              860,00          9.560,00C
+30/08/24 Valor  Ref.  prod cb ailton 02agr 02bf santo antonio
+         encanamento                                            7411  170143                              840,00         10.400,00C
+31/08/24 Valor  Ref. prod cb ailton  02agr 01bf santo antonio
+         encanamento                                            7411  170216                              640,00         11.040,00C
+02/09/24 Valor Ref. Prod. CB Ailton 01 BF ACLF - Belém          7261  171751                              250,00         11.290,00C
+         Valor Ref. Prod. CB Ailton 01BF, 02RCC - Humaytá       7522  171786                              750,00         12.040,00C
+03/09/24 Valor Ref. Prod. CB Ailton 03 Areia - Conlusa          5211  171841                              600,00         12.640,00C
+         Valor Ref. Prod. CB Ailton 02 AGR Santo Ant/Humaytá    7411  171905                              440,00         13.080,00C
+04/09/24 Valor   Ref.  prod  cb  ailton  02bf  03rcc  humayta
+         aviador severiano                                      7522  172201                            1.250,00         14.330,00C
+05/09/24 Valor   Ref.   prod   cb  ailton  04agr  estrada  do
+         encanamento                                            7456  172855                              880,00         15.210,00C
+06/09/24 Valor Ref. Pagto de produção (CB Ailton)                187  172731         10.400,00                            4.810,00C
+         Valor   Ref.  prod  cb  ailton  03rcc  01bf  humayta
+         aviador severiano                                      7522  172871                            1.000,00          5.810,00C
+10/09/24 Valor  Ref.  prod    cb  nem  bco  04agr  estrada do
+         encanamento                                            7456  173720                              880,00          6.690,00C
+11/09/24 Valor Ref. prod cb ailton 01bgs av cons.aguiar         4989  174122                              500,00          7.190,00C
+         Valor Ref. prod cb ailton 01bf aclf estrada de belem   7261  174173                              250,00          7.440,00C
+12/09/24 Valor Ref. prod cb ailton 01bgs av cons.aguiar         4989  174742                              500,00          7.940,00C
+13/09/24 Valor Ref. prod cb ailton 04bf inconcal torre          6758  174807                              800,00          8.740,00C
+16/09/24 Valor Ref. prod cb ailton 03bf fokus na bomba          6267  175536                              600,00          9.340,00C
+         Valor Ref. prod cb ailton 04bf conlusa av norte        5144  175552                              600,00          9.940,00C
+17/09/24 Valor Ref. prod cb ailton 03bf bomba hemeterio         6267  176141                              600,00         10.540,00C
+18/09/24 Valor  Ref.  prod  cb  ailton  03bf rua prof candido
+         pessoa                                                 5428  176702                              600,00         11.140,00C
+23/09/24 Valor   Ref.   prod   cb  ailton    03agr  monteplan
+         encruzilhada                                           7641  178021                              660,00         11.800,00C
+24/09/24 Valor   Ref.   prod   cb  ailton  07  agr  monteplan
+         encruzilhada                                           7641  178071                            1.540,00         13.340,00C
+25/09/24 Valor   Ref.   prod   cb   ailton   05agr  monteplan
+         encruzilhada                                           7641  178896                            1.100,00         14.440,00C
+         Valor  Ref.  prod  cb  ailton  02bf rua prof candido
+         pessoa                                                 5428  178926                              200,00         14.640,00C
+26/09/24 Valor   Ref.   prod   cb   ailton   06agr  monteplan
+         encruzilhada                                           7641  178951                            1.320,00         15.960,00C
+                                                                  TOTAIS =           17.350,00         28.440,00         15.960,00C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    2
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         3151  2.1.02.01              CAÇAMBEIROS                             
+CONTA:   1041  2.1.02.01.01           CB Giliard                                                  
+16/09/24 Valor Ref. prod cb giliard 02bf fokus na bomba         6267  175561                              400,00            400,00C
+17/09/24 Valor Ref. prod cb giliard 04bf bomba hemeterio        6267  176168                              800,00          1.200,00C
+20/09/24 Valor  Ref.  prod  cb  giliard 01bf rua prof candido
+         pessoa                                                 5428  177385                              200,00          1.400,00C
+                                                                  TOTAIS =                0,00          1.400,00          1.400,00C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    3
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         3151  2.1.02.01              CAÇAMBEIROS                             
+CONTA:   1063  2.1.02.01.01           CB Gordo                                                    
+20/09/24 Valor  Ref.  prod  cb  gordo  08bf  rua prof candido
+         pessoa                                                 5428  177393                            1.600,00          1.600,00C
+                                                                  TOTAIS =                0,00          1.600,00          1.600,00C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    4
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         5316  2.1.02.01.01           CAÇAMBAS DIVERSAS                       
+CONTA:   1130  2.1.02.01.01.01        CB HVC-1036 Nem bco                                         
+         SALDO ANTERIOR                                                                                                   5.199,86C
+15/08/24 Valor   Ref.   Compra   de  kit  indicador,  comando
+         pneumático,  bomba hidráulica e força na Kropneus c/
+         a NF 203818 - 3/4                                      3725  133370            995,75                            4.204,11C
+         Valor Ref. prod cb nem bco 01agr max plural veiga      6340  160024                              220,00          4.424,11C
+         Valor  Ref.  prod  cb  nem  bco  04agr  02bf padaria
+         rosarinho                                              6280  160075                            1.280,00          5.704,11C
+16/08/24 Valor Ref. Abastec.181,002 x R$ 5,79 - 178813          7315  159697          1.048,00                            4.656,11C
+         Valor Ref. prod cb nem bco 05bf padaria rosarinho      6280  160121                            1.000,00          5.656,11C
+         Valor Ref. prod cb nem bco 01bf dona anuciada          7433  160148                              200,00          5.856,11C
+17/08/24 Valor Ref. prod cb nem bco 01bf padaria rosarinho      6280  160181                              200,00          6.056,11C
+         Valor  Ref.  prod  cb  nem bco 05agr 01bf max plural
+         veiga                                                  6340  160211                            1.300,00          7.356,11C
+19/08/24 Valor Ref. prod cb nem bco 06bf max plural veiga       6340  160806                            1.200,00          8.556,11C
+20/08/24 Valor Ref. ,prod cb nem bco 03bf max plural veiga      6340  161233                              600,00          9.156,11C
+         Valor Ref. ,prod cb nem bco 02bf palacio rosarinho     2298  161250                              400,00          9.556,11C
+21/08/24 Valor Ref. Abastec.176,166 x R$ 5,79 - 180636          7315  161306          1.020,00                            8.536,11C
+         Valor Ref. prod cb nem bco 01bf max plural veiga       6340  161535                              200,00          8.736,11C
+         Valor  Ref.  prod  cb  nem  bco  01bf  01agr palacio
+         rosarinho                                              2298  161543                              420,00          9.156,11C
+23/08/24 Valor Ref. Pagto da produção (CB Jean)                  187  162078          5.856,17                            3.299,94C
+         Valor Ref. prod cb nem bco 01agr dom sebastiao leme    7172  162167                              220,00          3.519,94C
+         Valor Ref. prod cb nem bco 03bf inconcal               6758  162205                              600,00          4.119,94C
+24/08/24 Valor Ref. prod cb nem bco 05bf piedade                5990  164127                            1.000,00          5.119,94C
+26/08/24 Valor Ref. prod cb nem  bco 01bf praça das auroras     2364  167975                              200,00          5.319,94C
+         Valor Ref. prod cb nem bco 03agr tecla                 6356  168106                              660,00          5.979,94C
+27/08/24 Valor Ref. prod cb nem bco 04bf forme vila popula      7479  168017                              800,00          6.779,94C
+         Valor Ref. prod cb nem bco 02bf inconcal torre         6758  168033                              400,00          7.179,94C
+28/08/24 Valor Ref. prod cb nem bco 08bf forme vila popular     7479  169005                            1.600,00          8.779,94C
+29/08/24 Valor  Ref.  Compra  de  de  garfo engrenagem, bucha
+         garfo  reduzido e bucha acoplamento na Rediesel c/ a
+         NF 1083440 - 3/4                                       5842  138959            183,00                            8.596,94C
+         Valor Ref. Abastec.201,58 x R$ 5,79 - 183528           7315  169234          1.167,15                            7.429,79C
+         Valor  Ref.  prod  cb  nem  bco  03agr  01bf estrada
+         encanamento                                            7456  169421                              860,00          8.289,79C
+30/08/24 Valor  Ref. prod cb nem bco 02agr 02bf santo antonio
+         encanamento                                            7411  170119                              840,00          9.129,79C
+31/08/24 Valor  Ref. prod cb nem bco 02agr 01bf santo antonio
+         encanamento                                            7411  170208                              640,00          9.769,79C
+03/09/24 Valor Ref. Prod. CB Nem Bco 05 Areia - Conlusa         5211  171832                            1.000,00         10.769,79C
+         Valor Ref. Prod. CB Nem Bco 02 AGR Santo Ant/Humaytá   7411  171883                              440,00         11.209,79C
+04/09/24 Valor  Ref.  prod  cb  nem  bco  03bf  02rcc humayta
+         aviador severiano                                      7522  172227                            1.250,00         12.459,79C
+05/09/24 Valor Ref. Abastec.198,619 x R$ 5,79 - 186062          7315  172332          1.150,00                           11.309,79C
+         Valor Ref. Pito + montagem de pito                     4251  172413             55,00                           11.254,79C
+         Valor  Ref.  prod  cb  nem  bco  03bf  01rcc humayta
+         aviador severiano                                      7522  172821                            1.000,00         12.254,79C
+         Valor   Ref.  prod  cb  nem  bco  01agr  estrada  do
+         encanamento                                            7456  172847                              220,00         12.474,79C
+06/09/24 Valor Ref. Pagto de produção (CB Jean)                  187  172723          9.129,79                            3.345,00C
+         Valor  Ref.  prod  cb  nem  bco 05bf aclf estrada de
+         belem                                                  7261  172910                            1.250,00          4.595,00C
+09/09/24 Valor  Ref.  prod  cb  nem  bco 02bf aclf estrada de
+         belem                                                  7261  173673                              500,00          5.095,00C
+         Valor Ref. prod cb nem bco 03agr estrada encanamento   7456  173681                              660,00          5.755,00C
+10/09/24 Valor Ref. Abastec.157,167 x R$ 5,79 - 188110          7315  173550            910,00                            4.845,00C
+         Valor  Ref.  prod    cb  nem  bco  05agr  estrada do
+         encanamento                                            7456  173711                            1.100,00          5.945,00C
+11/09/24 Valor Ref. prod cb nem bco 01bgs av cons.aguiar        4989  174131                              500,00          6.445,00C
+         Valor  Ref.  prod  cb  nem  bco 01bf aclf estrada de
+         belem                                                  7261  174149                              250,00          6.695,00C
+12/09/24 Valor   Ref.  Compra  de  cruzeta,  coxim,  borracha
+         sanfona,  luva  do  cardan e serviço de remanufatura
+         na HS c/ a NF 11309 e a NFSe 12725 - 3/3               2944  143014            978,00                            5.717,00C
+         Valor Ref. prod cb nem bco 01bgs av cons.aguiar        4989  174734                              500,00          6.217,00C
+13/09/24 Valor Ref. prod cb nem bco 03bf inconcal torre         6758  174815                              600,00          6.817,00C
+14/09/24 Valor   Ref.   Compra   de  kit  indicador,  comando
+         pneumático,  bomba hidráulica e força na Kropneus c/
+         a NF 203818 - 4/4                                      3725  133388            995,75                            5.821,25C
+         Valor   Ref.   prod  cb  nem  bco  03bf  estrada  do
+         encanamento                                            7456  174793                              600,00          6.421,25C
+16/09/24 Valor Ref. prod cb nem bco 03bf fokus na bomba         6267  175528                              600,00          7.021,25C
+         Valor Ref. prod cb nem bco 02bf conlusa av norte       5144  175544                              400,00          7.421,25C
+         Valor Ref. Abastec.168,969 x R$ 5,79 - 190488          7315  176095            978,33                            6.442,92C
+17/09/24 Valor Ref. prod cb nem bco 03bf bomba hemeterio        6267  176150                              600,00          7.042,92C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    5
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+         5316  2.1.02.01.01           CAÇAMBAS DIVERSAS                       
+CONTA:   1130  2.1.02.01.01.01        CB HVC-1036 Nem bco                                          - continuação
+18/09/24 Valor  Ref.  prod  cb  nem bco 02bf rua prof candido
+         pessoa                                                 5428  176711                              400,00          7.442,92C
+         Valor  Ref.  prod  cb  nem  bco  01bf  rua  marechal
+         deodoro encruzilhada monteplan                         7641  176745                              200,00          7.642,92C
+19/09/24 Valor  Ref.  prod  cb  nem bco 06bf rua prof candido
+         pessoa                                                 5428  176851                            1.200,00          8.842,92C
+20/09/24 Valor Ref. Adiant. da produção (CB Sérgio)              187  177113          6.500,00                            2.342,92C
+         Valor  Ref.  prod  cb  nem bco 06bf rua prof candido
+         pessoa                                                 5428  177377                            1.200,00          3.542,92C
+21/09/24 Valor Ref. prod cb nem bco 04bfaclf estrada de belem   7261  177407                              800,00          4.342,92C
+         Valor   Ref.   Abastec.162,589  x  R$  5,79  na  APR
+         Combust. c/ a NFCe 275584                              7315  177474            941,38                            3.401,54C
+23/09/24 Valor   Ref.   prod   cb  nem  bco  03agr  monteplan
+         encruzilhada                                           7641  178012                              660,00          4.061,54C
+24/09/24 Valor   Ref.  prod  cb  nem  bco  06  agr  monteplan
+         encruzilhada                                           7641  178063                            1.320,00          5.381,54C
+25/09/24 Valor  Ref.  prod  cb  nem  bco 04agr 01bf monteplan
+         encruzilhada                                           7641  178675                            1.080,00          6.461,54C
+         Valor  Ref.  prod  cb  nem bco 02bf rua prof candido
+         pessoa                                                 5428  178918                              400,00          6.861,54C
+26/09/24 Valor Ref. Abastec.157,033 x R$ 5,79 - 194428          7315  178799            909,22                            5.952,32C
+         Valor   Ref.   prod   cb  nem  bco  06agr  monteplan
+         encruzilhada                                           7641  178969                            1.320,00          7.272,32C
+                                                                  TOTAIS =           32.817,54         34.890,00          7.272,32C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    6
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         5316  2.1.02.01.01           CAÇAMBAS DIVERSAS                       
+CONTA:   5322  2.1.02.01.01.01        CB JQR-2H64 Nem azul                                        
+         SALDO ANTERIOR                                                                                                   6.385,72C
+15/08/24 Valor  Ref.  prod  cb  nem  azul  04agr 01bf padaria
+         rosarinho                                              6280  160067                            1.080,00          7.465,72C
+16/08/24 Valor Ref. Abastec.191,57 x R$ 5,79 - 178798           7315  159689          1.109,19                            6.356,53C
+         Valor Ref. prod cb nem azul 01bf padaria rosarinho     6280  160105                              200,00          6.556,53C
+         Valor Ref. prod cb nem azul 05bf dona anuciada         7433  160164                            1.000,00          7.556,53C
+17/08/24 Valor Ref. prod cb nem azul 01bf padaria rosarinho     6280  160172                              200,00          7.756,53C
+         Valor  Ref.  prod  cb nem azul 04agr 01bf max plural
+         veiga                                                  6340  160202                            1.080,00          8.836,53C
+19/08/24 Valor Ref. prod cb nem azul 05bf max plural veiga      6340  160792                            1.000,00          9.836,53C
+20/08/24 Valor Ref. prod cb nem azul 01bf max plural veiga      6340  161225                              200,00         10.036,53C
+         Valor Ref. ,prod cb nem azul 02agr palacio rosarinho   2298  161276                              440,00         10.476,53C
+21/08/24 Valor Ref. Abastec.148,603 x R$ 5,79 - sem N/F         7315  161357            882,70                            9.593,83C
+         Valor Ref. prod cb nem 01diaria curado                 5919  161837                              800,00         10.393,83C
+22/08/24 Valor Ref. prod cb nem 01diaria curado                 5919  161845                              800,00         11.193,83C
+23/08/24 Valor Ref. Pagto da produção (CB Nem)                   187  162086          7.556,53                            3.637,30C
+         Valor Ref. prod cb nem azul 01diaria bl curado         5919  162213                              800,00          4.437,30C
+24/08/24 Valor Ref. Abastec.75,333 x R$ 5,79 - 181760           7315  162256            436,18                            4.001,12C
+         Valor Ref. prod cb nem azul 01diaria curado            5919  164101                              800,00          4.801,12C
+26/08/24 Valor Ref. prod cb nem azul 01diaria curado            5919  167991                              800,00          5.601,12C
+27/08/24 Valor Ref. prod cb nem azul 02bf inconcal torre        6758  168050                              400,00          6.001,12C
+         Valor Ref. prod cb nem azul 05bf forme vila popular    7479  168068                            1.000,00          7.001,12C
+28/08/24 Valor Ref. prod cb nem azul 08bf forme vila popular    7479  168980                            1.600,00          8.601,12C
+29/08/24 Valor Ref. Abastec.134,653 x R$ 5,79 - 183527          7315  169242            779,64                            7.821,48C
+         Valor  Ref.  prod  cb  nem  bco  03agr  02bf estrada
+         encanamento                                            7456  169455                            1.060,00          8.881,48C
+30/08/24 Valor  Ref. prod cb nem azul02agr 02bf santo antonio
+         encanamento                                            7411  170135                              840,00          9.721,48C
+31/08/24 Valor  Ref.  prod  cb  nem  azul  02agr  01bf  santo
+         antonio encanamento                                    7411  170186                              640,00         10.361,48C
+02/09/24 Valor Ref. Prod. CB Nem Azul 02 BF ACLF - Belém        7261  171778                              500,00         10.861,48C
+         Valor Ref. Prod. CB Nem Azul 02RCC - Humaytá           7522  171794                              500,00         11.361,48C
+03/09/24 Valor Ref. Abastec.151,418 x R$ 5,79 - 185304          7315  171662            876,71                           10.484,77C
+         Valor Ref. Prod. CB Nem Azul 04 Areia - Conlusa        5211  171859                              800,00         11.284,77C
+         Valor   Ref.   Prod.   CB  Nem  Azul  02  AGR  Santo
+         Ant/Humaytá                                            7411  171875                              440,00         11.724,77C
+04/09/24 Valor  Ref.  prod  cb  nem  azul  03bf 02rcc humayta
+         aviador severiano                                      7522  172235                            1.250,00         12.974,77C
+05/09/24 Valor  Ref.  prod  cb nem azul 06bf aclf estrada  de
+         belem                                                  7261  172812                            1.500,00         14.474,77C
+06/09/24 Valor Ref. Abastec.168,179 x R$ 5,79 - xxxx            7315  172529            973,75                           13.501,02C
+         Valor Ref. Pagto de produção (CB Nem)                   187  172715          9.721,48                            3.779,54C
+         Valor  Ref.  prod  cb  nem azul 05bf aclf estrada de
+         belem                                                  7261  172901                            1.250,00          5.029,54C
+08/09/24 Valor Ref. prod cb nem azul 02bf av norte              7574  173649                              400,00          5.429,54C
+09/09/24 Valor  Ref. Compra de pneus 375/80R 32.5 na Drive c/
+         a NF 69400 - 3/10                                            140511            355,10                            5.074,44C
+         Valor Ref. Abastec.68,033 x R$ 5,79 - 187929           7315  173479            393,91                            4.680,53C
+10/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  173738                            1.000,00          5.680,53C
+11/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  174157                            1.000,00          6.680,53C
+12/09/24 Valor  Ref.  prod  cb nem azu 01 diaria supermix rio
+         formoso                                                7203  174726                            1.000,00          7.680,53C
+13/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  174769                            1.000,00          8.680,53C
+14/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  174785                            1.000,00          9.680,53C
+16/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  175510                            1.000,00         10.680,53C
+17/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formso                                                 7203  176125                            1.000,00         11.680,53C
+18/09/24 Valor  Ref.  Abastec.  166,724  x  R$  6,29 no Posto
+         Carneiros c/ a NFCe 114317                              187  176389          1.048,69                           10.631,84C
+         Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  176729                            1.000,00         11.631,84C
+19/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  176842                            1.000,00         12.631,84C
+20/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  177369                            1.000,00         13.631,84C
+21/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  177415                            1.000,00         14.631,84C
+22/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  177431                            1.000,00         15.631,84C
+24/09/24 Valor  Ref.  prod cb nem azul 01 diaria supermix rio
+         formoso                                                7203  178055                            1.000,00         16.631,84C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    7
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+         5316  2.1.02.01.01           CAÇAMBAS DIVERSAS                       
+CONTA:   5322  2.1.02.01.01.01        CB JQR-2H64 Nem azul                                         - continuação
+25/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  178659                            1.000,00         17.631,84C
+26/09/24 Valor  Ref.  prod  cb nem azul 01diaria supermix rio
+         formoso                                                7203  178934                            1.000,00         18.631,84C
+                                                                  TOTAIS =           24.133,88         36.380,00         18.631,84C
+WK Sistemas - Demonstração                                         RAZÄO N.    3              DE 15/08/24 ATÉ 27/09/24    PAG.    8
+                                                                                                         Data de Emissão : 27/09/24
+  DATA   HISTÓRICO                                     CONTRAPARTIDA   CHAVE            DÉBITO           CRÉDITO             SALDO
+
+
+         5316  2.1.02.01.01           CAÇAMBAS DIVERSAS                       
+CONTA:   7048  2.1.02.01.01.02        CB Santos Lins JJZ-2H88                                     
+         SALDO ANTERIOR                                                                                                   7.460,00C
+15/08/24 Valor Ref. prod cb jjz-2h88 01agr max plural veiga     6340  160016                              220,00          7.680,00C
+         Valor  Ref.  prod  cb  jjz-2h88  04agr  01bf padaria
+         rosarinho                                              6280  160059                            1.080,00          8.760,00C
+16/08/24 Valor   Ref.  prod  cb  jjz-2h88  05bf  visconde  de
+         jequitinhonha                                          5552  160091                            1.250,00         10.010,00C
+17/08/24 Valor   Ref.  prod  cb  jjz-2h88  05bf  visconde  de
+         jequitinhonha                                          5552  160229                            1.250,00         11.260,00C
+19/08/24 Valor Ref. prod cb jjz-2h88 05bf max plural veiga      6340  160814                            1.000,00         12.260,00C
+20/08/24 Valor Ref. ,prod cb jjz- 2h88 03bf max plural veiga    6340  161241                              600,00         12.860,00C
+         Valor  Ref.  ,prod  cb  jjz-2h88  01bf 01agr palacio
+         rosarinho                                              2298  161284                              420,00         13.280,00C
+21/08/24 Valor  Ref.  prod  cb  jjz-2h88  01agr  02bf palacio
+         rosarinho                                              2298  161551                              620,00         13.900,00C
+22/08/24 Valor Ref. prod cb jjz-2h88 01diaria coqueral park     5954  161853                              800,00         14.700,00C
+23/08/24 Valor Ref. prod cb jjz-2h88 01agr dom sebastiao leme   7172  162175                              220,00         14.920,00C
+         Valor Ref. prod cb jjz-2h88 04bf inconcal              6758  162183                              800,00         15.720,00C
+24/08/24 Valor Ref. prod cb jjz-2h88 01bf piedade               5990  164119                              200,00         15.920,00C
+26/08/24 Valor Ref. prod cb jjz-2h88 01bf praça das auroras     2364  167983                              200,00         16.120,00C
+         Valor Ref. prod cb jjz2k88 01bf 03agr tecla            6356  168084                              860,00         16.980,00C
+27/08/24 Valor Ref. prod cb jjz-2h88 05bf inconcal torre        6758  168041                            1.000,00         17.980,00C
+         Valor Ref. prod cb jjz2k88 02bf forme vila popular     7479  168076                              400,00         18.380,00C
+28/08/24 Valor Ref. prod cb jjz-2h88 07bf forme vila popular    7479  168998                            1.400,00         19.780,00C
+29/08/24 Valor  Ref.  prod  cb  nem  bco  02agr  02bf estrada
+         encanamento                                            7456  169439                              840,00         20.620,00C
+30/08/24 Valor  Ref. prod cb jjz-288 02agr 02bf santo antonio
+         encanamento                                            7411  170127                              840,00         21.460,00C
+31/08/24 Valor   Ref.  prod  cb  jjz-2h88  02agr  01bf  santo
+         antonio encanamento                                    7411  170178                              640,00         22.100,00C
+02/09/24 Valor Ref. Prod. CB JJZ-2H88 02 BF ACLF - Belém        7261  171760                              500,00         22.600,00C
+         Valor Ref. Prod. CB JJZ-2H88 01BF, 02RCC - Humaytá     7522  171808                              750,00         23.350,00C
+03/09/24 Valor Ref. Prod. CB JJZ-2H88 03 Areia - Conlusa        5211  171824                              600,00         23.950,00C
+         Valor   Ref.   Prod.   CB   JJZ-2H88  02  AGR  Santo
+         Ant/Humaytá                                            7411  171891                              440,00         24.390,00C
+04/09/24 Valor  Ref.  prod  cb  jjz-2h88  03bf  02rcc humayta
+         aviador severiano                                      7522  172219                            1.250,00         25.640,00C
+05/09/24 Valor  Ref.  prod  cb jjz-2h88 05bf aclf estrada  de
+         belem                                                  7261  172804                            1.250,00         26.890,00C
+06/09/24 Valor  Ref.  prod  cb  jjz-288  05bf aclf estrada de
+         belem                                                  7261  172898                            1.250,00         28.140,00C
+07/09/24 Valor Ref. Pagto produção (CB Santos Lins Transp)       187  172987         21.460,00                            6.680,00C
+08/09/24 Valor Ref. prod cb jjz-2h88 02bf av norte              7574  173657                              400,00          7.080,00C
+09/09/24 Valor  Ref.  prod  cb  jjz-2h88 03bf aclf estrada de
+         belem                                                  7261  173665                              750,00          7.830,00C
+10/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  173746                            1.000,00          8.830,00C
+11/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  174165                            1.000,00          9.830,00C
+12/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  174718                            1.000,00         10.830,00C
+13/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  174751                            1.000,00         11.830,00C
+14/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  174777                            1.000,00         12.830,00C
+16/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  175501                            1.000,00         13.830,00C
+17/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formso                                                 7203  176133                            1.000,00         14.830,00C
+18/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  176737                            1.000,00         15.830,00C
+19/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  176834                            1.000,00         16.830,00C
+20/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  177351                            1.000,00         17.830,00C
+21/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  177423                            1.000,00         18.830,00C
+22/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  177440                            1.000,00         19.830,00C
+24/09/24 Valor  Ref.  prod cb jjz-2h88 01 diaria supermix rio
+         formoso                                                7203  178047                            1.000,00         20.830,00C
+25/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  178667                            1.000,00         21.830,00C
+26/09/24 Valor  Ref.  prod  cb jjz-2h88 01diaria supermix rio
+         formoso                                                7203  178942                            1.000,00         22.830,00C
+                                                                  TOTAIS =           21.460,00         36.830,00         22.830,00C
+************************************************************************************************************************************
