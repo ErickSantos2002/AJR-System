@@ -141,3 +141,50 @@ export interface DashboardData {
         valor: number;
     }>;
 }
+
+export type StatusContaPagar = "A_VENCER" | "VENCIDO" | "PAGO" | "CANCELADO";
+
+export interface ContaPagar {
+    id: number;
+    descricao: string;
+    valor: number;
+    data_vencimento: string;
+    data_pagamento: string | null;
+    status: StatusContaPagar;
+    categoria: string | null;
+    fornecedor_id: number | null;
+    fornecedor_nome: string | null;
+    parcela_numero: number | null;
+    parcela_total: number | null;
+    grupo_parcelamento: string | null;
+    recorrente: boolean;
+    dia_vencimento_recorrente: number | null;
+    observacoes: string | null;
+    lancamento_id: number | null;
+    usuario_id: number | null;
+    created_at: string;
+    updated_at: string | null;
+}
+
+export type StatusContaReceber = "A_RECEBER" | "RECEBIDO" | "ATRASADO" | "CANCELADO";
+
+export interface ContaReceber {
+    id: number;
+    descricao: string;
+    valor: number;
+    data_vencimento: string;
+    data_recebimento: string | null;
+    status: StatusContaReceber;
+    categoria: string | null;
+    cliente_id: number | null;
+    cliente_nome: string | null;
+    parcela_numero: number | null;
+    parcela_total: number | null;
+    grupo_parcelamento: string | null;
+    numero_documento: string | null;
+    observacoes: string | null;
+    lancamento_id: number | null;
+    usuario_id: number | null;
+    created_at: string;
+    updated_at: string | null;
+}

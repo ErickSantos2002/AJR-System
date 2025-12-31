@@ -40,9 +40,20 @@ export function usePlanoContasMutations() {
         },
     });
 
+    const toggleAtivoConta = useMutation({
+        mutationFn: async ({ id, ativo }: { id: number; ativo: boolean }) => {
+            const { data } = await api.patch(`/plano-contas/${id}`, { ativo });
+            return data;
+        },
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: ["plano-contas"] });
+        },
+    });
+
     return {
         criarConta,
         atualizarConta,
         deletarConta,
+        toggleAtivoConta,
     };
 }

@@ -48,7 +48,7 @@ export default function LancamentoModal({
                     lancamentoInicial.partidas.map((p) => ({
                         conta_id: p.conta_id,
                         tipo: p.tipo,
-                        valor: Number(p.valor),
+                        valor: parseFloat(String(p.valor)) || 0,
                     }))
                 );
             } else {
@@ -68,11 +68,17 @@ export default function LancamentoModal({
     const calcularTotais = () => {
         const totalDebito = partidas
             .filter((p) => p.tipo === "DEBITO")
-            .reduce((sum, p) => sum + (p.valor || 0), 0);
+            .reduce((sum, p) => {
+                const valor = typeof p.valor === "number" && !isNaN(p.valor) ? p.valor : 0;
+                return sum + valor;
+            }, 0);
 
         const totalCredito = partidas
             .filter((p) => p.tipo === "CREDITO")
-            .reduce((sum, p) => sum + (p.valor || 0), 0);
+            .reduce((sum, p) => {
+                const valor = typeof p.valor === "number" && !isNaN(p.valor) ? p.valor : 0;
+                return sum + valor;
+            }, 0);
 
         return { totalDebito, totalCredito };
     };
@@ -92,7 +98,18 @@ export default function LancamentoModal({
 
     const atualizarPartida = (index: number, field: keyof Partida, value: any) => {
         const novasPartidas = [...partidas];
-        novasPartidas[index] = { ...novasPartidas[index], [field]: value };
+
+        // Se o campo for valor, garantir que seja um número válido
+        if (field === "valor") {
+            const numValue = typeof value === "number" ? value : parseFloat(value);
+            novasPartidas[index] = {
+                ...novasPartidas[index],
+                [field]: isNaN(numValue) ? 0 : numValue
+            };
+        } else {
+            novasPartidas[index] = { ...novasPartidas[index], [field]: value };
+        }
+
         setPartidas(novasPartidas);
     };
 
@@ -320,12 +337,12 @@ export default function LancamentoModal({
                                                             type="number"
                                                             step="0.01"
                                                             min="0"
-                                                            value={partida.valor || ""}
+                                                            value={isNaN(partida.valor) ? "" : partida.valor || ""}
                                                             onChange={(e) =>
                                                                 atualizarPartida(
                                                                     index,
                                                                     "valor",
-                                                                    parseFloat(e.target.value) || 0
+                                                                    e.target.value
                                                                 )
                                                             }
                                                             placeholder="R$ 0,00"
@@ -416,12 +433,12 @@ export default function LancamentoModal({
                                                             type="number"
                                                             step="0.01"
                                                             min="0"
-                                                            value={partida.valor || ""}
+                                                            value={isNaN(partida.valor) ? "" : partida.valor || ""}
                                                             onChange={(e) =>
                                                                 atualizarPartida(
                                                                     index,
                                                                     "valor",
-                                                                    parseFloat(e.target.value) || 0
+                                                                    e.target.value
                                                                 )
                                                             }
                                                             placeholder="R$ 0,00"

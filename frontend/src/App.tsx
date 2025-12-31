@@ -8,7 +8,10 @@ import Clientes from "./pages/Clientes";
 import Equipamentos from "./pages/Equipamentos";
 import Motoristas from "./pages/Motoristas";
 import Lancamentos from "./pages/Lancamentos";
+import ContasPagar from "./pages/ContasPagar";
+import ContasReceber from "./pages/ContasReceber";
 import Configuracoes from "./pages/Configuracoes";
+import Toaster from "./components/Toaster";
 
 function App() {
     return (
@@ -22,10 +25,13 @@ function App() {
                         <Route path="equipamentos" element={<Equipamentos />} />
                         <Route path="motoristas" element={<Motoristas />} />
                         <Route path="lancamentos" element={<Lancamentos />} />
+                        <Route path="contas-pagar" element={<ContasPagar />} />
+                        <Route path="contas-receber" element={<ContasReceber />} />
                         <Route path="configuracoes" element={<Configuracoes />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
+            <Toaster />
         </QueryClientProvider>
     );
 }

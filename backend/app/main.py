@@ -14,6 +14,8 @@ from app.routers import (
     manutencoes,
     lancamentos,
     dashboard,
+    contas_pagar,
+    contas_receber,
 )
 
 app = FastAPI(title=settings.APP_NAME, debug=settings.DEBUG)
@@ -42,6 +44,8 @@ app.include_router(plano_contas.router)
 app.include_router(historicos.router)
 app.include_router(centros_custo.router)
 app.include_router(lancamentos.router)
+app.include_router(contas_pagar.router)
+app.include_router(contas_receber.router)
 app.include_router(dashboard.router)
 
 

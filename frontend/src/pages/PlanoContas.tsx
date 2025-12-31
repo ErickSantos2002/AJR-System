@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Plus, Pencil, Trash2, Filter, X, FileDown, FileSpreadsheet, ChevronDown, ChevronRight, ChevronsDownUp, ChevronsUpDown, Eye, ChevronLeft } from "lucide-react";
+import { Search, Plus, Pencil, Trash2, Filter, X, FileDown, FileSpreadsheet, ChevronDown, ChevronRight, ChevronsDownUp, ChevronsUpDown, Eye, List, CheckCircle2, XCircle, FileCheck } from "lucide-react";
 import { usePlanoContas } from "../hooks/usePlanoContas";
 import { usePlanoContasMutations } from "../hooks/usePlanoContasMutations";
 import PlanoContasSkeleton from "../components/PlanoContasSkeleton";
@@ -7,8 +7,11 @@ import PlanoContasError from "../components/PlanoContasError";
 import PlanoContasModal from "../components/PlanoContasModal";
 import PlanoContasDetalhesModal from "../components/PlanoContasDetalhesModal";
 import SaldoContaCell from "../components/SaldoContaCell";
+import Pagination from "../components/Pagination";
 import { exportPlanoContasToExcel, exportPlanoContasToPDF } from "../lib/exportPlanoContas";
+import { showSuccess, showError } from "../lib/toast";
 import type { PlanoContas } from "../types";
+import toast from "react-hot-toast";
 
 export default function PlanoContasPage() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -43,7 +46,7 @@ export default function PlanoContasPage() {
     });
 
     const { data: contas, isLoading, isError, error, refetch } = usePlanoContas();
-    const { criarConta, atualizarConta, deletarConta } = usePlanoContasMutations();
+    const { criarConta, atualizarConta, deletarConta, toggleAtivoConta } = usePlanoContasMutations();
 
     // Salvar estado de expansão no localStorage
     useEffect(() => {
@@ -127,9 +130,9 @@ export default function PlanoContasPage() {
 
         try {
             await deletarConta.mutateAsync(conta.id);
+            showSuccess("Conta excluída com sucesso!");
         } catch (error) {
-            console.error("Erro ao excluir conta:", error);
-            alert("Erro ao excluir conta. Verifique se não existem lançamentos associados.");
+            showError("Erro ao excluir conta. Verifique se não existem lançamentos associados.", error);
         }
     };
 
@@ -145,16 +148,34 @@ export default function PlanoContasPage() {
                         ativo: dados.ativo,
                     },
                 });
+                showSuccess("Conta atualizada com sucesso!");
             } else {
                 // Criar nova conta
                 await criarConta.mutateAsync(dados);
+                showSuccess("Conta criada com sucesso!");
             }
             setIsModalOpen(false);
         } catch (error: any) {
-            console.error("Erro ao salvar conta:", error);
             const mensagem = error.response?.data?.detail || "Erro ao salvar conta";
-            alert(mensagem);
+            showError(mensagem, error);
             throw error;
+        }
+    };
+
+    const handleToggleAtivo = async (conta: PlanoContas, e: React.MouseEvent) => {
+        e.stopPropagation();
+
+        try {
+            await toggleAtivoConta.mutateAsync({
+                id: conta.id,
+                ativo: !conta.ativo,
+            });
+            toast.success(
+                `Conta ${!conta.ativo ? "ativada" : "desativada"} com sucesso!`
+            );
+        } catch (error) {
+            toast.error("Erro ao atualizar status da conta");
+            console.error(error);
         }
     };
 
@@ -170,6 +191,12 @@ export default function PlanoContasPage() {
     if (isLoading) return <PlanoContasSkeleton />;
     if (isError) return <PlanoContasError error={error as Error} onRetry={() => refetch()} />;
     if (!contas) return null;
+
+    // Estatísticas
+    const totalContas = contas.length;
+    const contasAtivas = contas.filter((c) => c.ativo).length;
+    const contasInativas = contas.filter((c) => !c.ativo).length;
+    const contasAceitamLancamento = contas.filter((c) => c.aceita_lancamento).length;
 
     const filteredContas = contas.filter((conta) => {
         // Filtro de busca
@@ -211,22 +238,9 @@ export default function PlanoContasPage() {
     });
 
     // Paginação
-    const totalPaginas = Math.ceil(filteredContas.length / itensPorPagina);
     const indiceInicio = (paginaAtual - 1) * itensPorPagina;
     const indiceFim = indiceInicio + itensPorPagina;
     const contasPaginadas = filteredContas.slice(indiceInicio, indiceFim);
-
-    const mudarPagina = (novaPagina: number) => {
-        if (novaPagina >= 1 && novaPagina <= totalPaginas) {
-            setPaginaAtual(novaPagina);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    };
-
-    const mudarItensPorPagina = (novoValor: number) => {
-        setItensPorPagina(novoValor);
-        setPaginaAtual(1);
-    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
@@ -245,6 +259,57 @@ export default function PlanoContasPage() {
                     <p className="text-slate-400">
                         Estrutura hierárquica de contas contábeis
                     </p>
+                </div>
+            </div>
+
+            {/* Cards de Estatísticas */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-indigo-500/50 transition-all">
+                    <div className="flex items-center justify-between">
+                        <div>
+                            <p className="text-slate-400 text-sm mb-1">Total de Contas</p>
+                            <p className="text-3xl font-bold text-white">{totalContas}</p>
+                        </div>
+                        <div className="p-3 bg-indigo-500/20 rounded-xl">
+                            <List className="text-indigo-400" size={24} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-green-500/50 transition-all">
+                    <div className="flex items-center justify-between">
+                        <div>
+                            <p className="text-slate-400 text-sm mb-1">Contas Ativas</p>
+                            <p className="text-3xl font-bold text-white">{contasAtivas}</p>
+                        </div>
+                        <div className="p-3 bg-green-500/20 rounded-xl">
+                            <CheckCircle2 className="text-green-400" size={24} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-red-500/50 transition-all">
+                    <div className="flex items-center justify-between">
+                        <div>
+                            <p className="text-slate-400 text-sm mb-1">Contas Inativas</p>
+                            <p className="text-3xl font-bold text-white">{contasInativas}</p>
+                        </div>
+                        <div className="p-3 bg-red-500/20 rounded-xl">
+                            <XCircle className="text-red-400" size={24} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div className="flex items-center justify-between">
+                        <div>
+                            <p className="text-slate-400 text-sm mb-1">Aceita Lançamento</p>
+                            <p className="text-3xl font-bold text-white">{contasAceitamLancamento}</p>
+                        </div>
+                        <div className="p-3 bg-cyan-500/20 rounded-xl">
+                            <FileCheck className="text-cyan-400" size={24} />
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -415,6 +480,9 @@ export default function PlanoContasPage() {
                                     Saldo
                                 </th>
                                 <th className="px-6 py-4 text-left text-xs font-medium text-slate-300 uppercase tracking-wider text-center">
+                                    Status
+                                </th>
+                                <th className="px-6 py-4 text-left text-xs font-medium text-slate-300 uppercase tracking-wider text-center">
                                     Ações
                                 </th>
                             </tr>
@@ -489,6 +557,18 @@ export default function PlanoContasPage() {
                                         />
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-center">
+                                        <button
+                                            onClick={(e) => handleToggleAtivo(conta, e)}
+                                            className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full cursor-pointer transition-all ${
+                                                conta.ativo
+                                                    ? "bg-green-500/20 text-green-300 border border-green-500/30 hover:bg-green-500/30"
+                                                    : "bg-red-500/20 text-red-300 border border-red-500/30 hover:bg-red-500/30"
+                                            }`}
+                                        >
+                                            {conta.ativo ? "Ativo" : "Inativo"}
+                                        </button>
+                                    </td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-center">
                                         <div className="flex items-center justify-center gap-2">
                                             <button
                                                 onClick={(e) => {
@@ -532,100 +612,15 @@ export default function PlanoContasPage() {
                 </div>
             </div>
 
-            {/* Footer com Paginação */}
-            <div className="mt-6 bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6">
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                    {/* Info */}
-                    <div className="text-sm text-slate-400">
-                        Mostrando{" "}
-                        <span className="text-white font-medium">
-                            {indiceInicio + 1}
-                        </span>{" "}
-                        até{" "}
-                        <span className="text-white font-medium">
-                            {Math.min(indiceFim, filteredContas.length)}
-                        </span>{" "}
-                        de{" "}
-                        <span className="text-white font-medium">
-                            {filteredContas.length}
-                        </span>{" "}
-                        conta(s)
-                    </div>
-
-                    {/* Controles de Paginação */}
-                    <div className="flex items-center gap-4">
-                        {/* Itens por página */}
-                        <div className="flex items-center gap-2">
-                            <span className="text-sm text-slate-400">Por página:</span>
-                            <select
-                                value={itensPorPagina}
-                                onChange={(e) => mudarItensPorPagina(parseInt(e.target.value))}
-                                className="px-3 py-2 bg-slate-800 border border-slate-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                            >
-                                <option value={25}>25</option>
-                                <option value={50}>50</option>
-                                <option value={100}>100</option>
-                                <option value={200}>200</option>
-                            </select>
-                        </div>
-
-                        {/* Botões de navegação */}
-                        <div className="flex items-center gap-2">
-                            <button
-                                onClick={() => mudarPagina(paginaAtual - 1)}
-                                disabled={paginaAtual === 1}
-                                className="p-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                            >
-                                <ChevronLeft size={20} />
-                            </button>
-
-                            {/* Números de página */}
-                            <div className="flex items-center gap-1">
-                                {Array.from({ length: totalPaginas }, (_, i) => i + 1)
-                                    .filter((page) => {
-                                        // Mostrar primeira, última, atual e adjacentes
-                                        return (
-                                            page === 1 ||
-                                            page === totalPaginas ||
-                                            Math.abs(page - paginaAtual) <= 1
-                                        );
-                                    })
-                                    .map((page, index, array) => {
-                                        // Adicionar "..." se houver gap
-                                        const prevPage = array[index - 1];
-                                        const showEllipsis = prevPage && page - prevPage > 1;
-
-                                        return (
-                                            <div key={page} className="flex items-center gap-1">
-                                                {showEllipsis && (
-                                                    <span className="px-2 text-slate-400">...</span>
-                                                )}
-                                                <button
-                                                    onClick={() => mudarPagina(page)}
-                                                    className={`px-3 py-1 rounded-lg transition-colors ${
-                                                        page === paginaAtual
-                                                            ? "bg-indigo-600 text-white"
-                                                            : "bg-slate-700 hover:bg-slate-600 text-white"
-                                                    }`}
-                                                >
-                                                    {page}
-                                                </button>
-                                            </div>
-                                        );
-                                    })}
-                            </div>
-
-                            <button
-                                onClick={() => mudarPagina(paginaAtual + 1)}
-                                disabled={paginaAtual === totalPaginas}
-                                className="p-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                            >
-                                <ChevronRight size={20} />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* Paginação */}
+            <Pagination
+                currentPage={paginaAtual}
+                totalItems={filteredContas.length}
+                itemsPerPage={itensPorPagina}
+                onPageChange={setPaginaAtual}
+                onItemsPerPageChange={setItensPorPagina}
+                itemsPerPageOptions={[25, 50, 100, 200]}
+            />
 
             {/* Modal de Cadastro/Edição */}
             <PlanoContasModal

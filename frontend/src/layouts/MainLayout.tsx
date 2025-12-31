@@ -8,6 +8,8 @@ import {
     Settings,
     Menu,
     X,
+    CreditCard,
+    DollarSign,
 } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo_png.png";
@@ -16,6 +18,8 @@ const menuItems = [
     { path: "/", icon: LayoutDashboard, label: "Dashboard" },
     { path: "/plano-contas", icon: FileText, label: "Plano de Contas" },
     { path: "/lancamentos", icon: FileText, label: "Lançamentos" },
+    { path: "/contas-pagar", icon: CreditCard, label: "Contas a Pagar" },
+    { path: "/contas-receber", icon: DollarSign, label: "Contas a Receber" },
     { path: "/clientes", icon: Users, label: "Clientes" },
     { path: "/equipamentos", icon: Truck, label: "Equipamentos" },
     { path: "/motoristas", icon: UserCircle, label: "Motoristas" },

@@ -31,6 +31,8 @@ import {
     ResponsiveContainer,
 } from "recharts";
 import { useDashboard } from "../hooks/useDashboard";
+import { useResumoContasPagar } from "../hooks/useContasPagar";
+import { useResumoContasReceber } from "../hooks/useContasReceber";
 import DashboardSkeleton from "../components/DashboardSkeleton";
 import DashboardError from "../components/DashboardError";
 import { exportToExcel, exportToPDF } from "../lib/exportUtils";
@@ -40,6 +42,8 @@ const COLORS = ["#3b82f6", "#06b6d4", "#8b5cf6", "#ec4899", "#f59e0b"];
 export default function Dashboard() {
     const [period, setPeriod] = useState<string>("");
     const { data, isLoading, isError, error, refetch, dataUpdatedAt } = useDashboard(period);
+    const { data: resumoContasPagar } = useResumoContasPagar();
+    const { data: resumoContasReceber } = useResumoContasReceber();
 
     const formatCurrency = (value: number) => {
         return new Intl.NumberFormat("pt-BR", {
@@ -299,6 +303,114 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
+
+            {/* Fluxo de Caixa */}
+            {(resumoContasPagar || resumoContasReceber) && (
+                <div className="mb-8">
+                    <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <DollarSign className="text-cyan-400" size={28} />
+                        Fluxo de Caixa
+                    </h2>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        {/* Contas a Pagar */}
+                        {resumoContasPagar && (
+                            <div className="bg-slate-900/50 backdrop-blur-xl border border-red-500/30 rounded-2xl p-6">
+                                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                    <CreditCard className="text-red-400" size={20} />
+                                    Contas a Pagar
+                                </h3>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Hoje</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasPagar.hoje.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasPagar.hoje.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Esta Semana</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasPagar.semana.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasPagar.semana.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Este Mês</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasPagar.mes.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasPagar.mes.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/30">
+                                        <p className="text-red-400 text-xs mb-1 font-medium">Vencidas</p>
+                                        <p className="text-xl font-bold text-red-400">
+                                            {formatCurrency(resumoContasPagar.vencidas.total)}
+                                        </p>
+                                        <p className="text-xs text-red-300/70 mt-1">
+                                            {resumoContasPagar.vencidas.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Contas a Receber */}
+                        {resumoContasReceber && (
+                            <div className="bg-slate-900/50 backdrop-blur-xl border border-green-500/30 rounded-2xl p-6">
+                                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                    <DollarSign className="text-green-400" size={20} />
+                                    Contas a Receber
+                                </h3>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Hoje</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasReceber.hoje.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasReceber.hoje.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Esta Semana</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasReceber.semana.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasReceber.semana.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                        <p className="text-slate-400 text-xs mb-1">Este Mês</p>
+                                        <p className="text-xl font-bold text-white">
+                                            {formatCurrency(resumoContasReceber.mes.total)}
+                                        </p>
+                                        <p className="text-xs text-slate-500 mt-1">
+                                            {resumoContasReceber.mes.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                    <div className="bg-orange-500/10 rounded-xl p-4 border border-orange-500/30">
+                                        <p className="text-orange-400 text-xs mb-1 font-medium">Atrasadas</p>
+                                        <p className="text-xl font-bold text-orange-400">
+                                            {formatCurrency(resumoContasReceber.atrasadas.total)}
+                                        </p>
+                                        <p className="text-xs text-orange-300/70 mt-1">
+                                            {resumoContasReceber.atrasadas.quantidade} conta(s)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
 
             {/* Gráficos */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">

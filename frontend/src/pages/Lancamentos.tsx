@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Search, Plus, ArrowUpCircle, ArrowDownCircle, Trash2, Filter, X, ChevronDown, ChevronRight, Edit, ChevronLeft } from "lucide-react";
+import { Search, Plus, ArrowUpCircle, ArrowDownCircle, Trash2, Filter, X, ChevronDown, ChevronRight, Edit, ArrowUpDown } from "lucide-react";
 import { useLancamentos, useHistoricos, useContasAnaliticas } from "../hooks/useLancamentos";
 import { useLancamentosMutations } from "../hooks/useLancamentosMutations";
 import LancamentosSkeleton from "../components/LancamentosSkeleton";
 import LancamentosError from "../components/LancamentosError";
 import LancamentoModal from "../components/LancamentoModal";
+import Pagination from "../components/Pagination";
 import type { Lancamento } from "../types";
+import { showSuccess, showError, toastPromise } from "../lib/toast";
 
 export default function Lancamentos() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -23,6 +25,9 @@ export default function Lancamentos() {
     // Paginação
     const [paginaAtual, setPaginaAtual] = useState(1);
     const [itensPorPagina, setItensPorPagina] = useState(20);
+
+    // Ordenação
+    const [ordenacao, setOrdenacao] = useState<"desc" | "asc">("desc"); // desc = mais recente primeiro
 
     const { data: lancamentos, isLoading, isError, error, refetch } = useLancamentos();
     const { data: historicos = [] } = useHistoricos();
@@ -51,10 +56,17 @@ export default function Lancamentos() {
     };
 
     const handleSalvarLancamento = async (dados: any) => {
-        if (lancamentoEditando) {
-            await atualizarLancamento.mutateAsync({ id: lancamentoEditando.id, dados });
-        } else {
-            await criarLancamento.mutateAsync(dados);
+        try {
+            if (lancamentoEditando) {
+                await atualizarLancamento.mutateAsync({ id: lancamentoEditando.id, dados });
+                showSuccess("Lançamento atualizado com sucesso!");
+            } else {
+                await criarLancamento.mutateAsync(dados);
+                showSuccess("Lançamento criado com sucesso!");
+            }
+        } catch (error) {
+            showError("Erro ao salvar lançamento", error);
+            throw error;
         }
     };
 
@@ -72,9 +84,9 @@ export default function Lancamentos() {
 
         try {
             await deletarLancamento.mutateAsync(id);
+            showSuccess("Lançamento excluído com sucesso!");
         } catch (error) {
-            console.error("Erro ao excluir lançamento:", error);
-            alert("Erro ao excluir lançamento.");
+            showError("Erro ao excluir lançamento", error);
         }
     };
 
@@ -112,47 +124,48 @@ export default function Lancamentos() {
         setHistoricoFiltro(null);
     };
 
-    const filteredLancamentos = lancamentos.filter((lancamento) => {
-        const historico = getHistoricoDescricao(lancamento.historico_id);
+    const filteredLancamentos = lancamentos
+        .filter((lancamento) => {
+            const historico = getHistoricoDescricao(lancamento.historico_id);
 
-        // Filtro de busca por texto
-        const matchesSearch =
-            historico.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            formatDate(lancamento.data_lancamento).includes(searchTerm) ||
-            lancamento.complemento?.toLowerCase().includes(searchTerm.toLowerCase());
+            // Filtro de busca por texto
+            const matchesSearch =
+                historico.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                formatDate(lancamento.data_lancamento).includes(searchTerm) ||
+                lancamento.complemento?.toLowerCase().includes(searchTerm.toLowerCase());
 
-        if (searchTerm && !matchesSearch) return false;
+            if (searchTerm && !matchesSearch) return false;
 
-        // Filtro de data inicial
-        if (dataInicial && lancamento.data_lancamento < dataInicial) return false;
+            // Filtro de data inicial
+            if (dataInicial && lancamento.data_lancamento < dataInicial) return false;
 
-        // Filtro de data final
-        if (dataFinal && lancamento.data_lancamento > dataFinal) return false;
+            // Filtro de data final
+            if (dataFinal && lancamento.data_lancamento > dataFinal) return false;
 
-        // Filtro de histórico
-        if (historicoFiltro && lancamento.historico_id !== historicoFiltro) return false;
+            // Filtro de histórico
+            if (historicoFiltro && lancamento.historico_id !== historicoFiltro) return false;
 
-        // Filtro de conta (verifica se alguma partida usa essa conta)
-        if (contaFiltro) {
-            const temConta = lancamento.partidas.some((p) => p.conta_id === contaFiltro);
-            if (!temConta) return false;
-        }
+            // Filtro de conta (verifica se alguma partida usa essa conta)
+            if (contaFiltro) {
+                const temConta = lancamento.partidas.some((p) => p.conta_id === contaFiltro);
+                if (!temConta) return false;
+            }
 
-        return true;
-    });
+            return true;
+        })
+        .sort((a, b) => {
+            // Ordenação por data
+            const dateA = new Date(a.data_lancamento).getTime();
+            const dateB = new Date(b.data_lancamento).getTime();
+
+            return ordenacao === "desc" ? dateB - dateA : dateA - dateB;
+        });
 
     // Paginação
     const totalPaginas = Math.ceil(filteredLancamentos.length / itensPorPagina);
     const indiceInicio = (paginaAtual - 1) * itensPorPagina;
     const indiceFim = indiceInicio + itensPorPagina;
     const lancamentosPaginados = filteredLancamentos.slice(indiceInicio, indiceFim);
-
-    const mudarPagina = (novaPagina: number) => {
-        if (novaPagina >= 1 && novaPagina <= totalPaginas) {
-            setPaginaAtual(novaPagina);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    };
 
     const mudarItensPorPagina = (novoValor: number) => {
         setItensPorPagina(novoValor);
@@ -196,6 +209,14 @@ export default function Lancamentos() {
                         />
                     </div>
                     <div className="flex items-center gap-3 ml-4">
+                        <button
+                            onClick={() => setOrdenacao(ordenacao === "desc" ? "asc" : "desc")}
+                            className="px-4 py-3 rounded-xl transition-all flex items-center font-medium bg-slate-700/50 text-slate-300 hover:bg-slate-700"
+                            title={ordenacao === "desc" ? "Mais recentes primeiro" : "Mais antigos primeiro"}
+                        >
+                            <ArrowUpDown size={20} className="mr-2" />
+                            {ordenacao === "desc" ? "Mais recentes" : "Mais antigos"}
+                        </button>
                         <button
                             onClick={() => setShowFilters(!showFilters)}
                             className={`px-4 py-3 rounded-xl transition-all flex items-center font-medium ${
@@ -480,100 +501,19 @@ export default function Lancamentos() {
                 )}
             </div>
 
-            {/* Footer com Paginação */}
-            <div className="mt-6 bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6">
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                    {/* Info */}
-                    <div className="text-sm text-slate-400">
-                        Mostrando{" "}
-                        <span className="text-white font-medium">
-                            {indiceInicio + 1}
-                        </span>{" "}
-                        até{" "}
-                        <span className="text-white font-medium">
-                            {Math.min(indiceFim, filteredLancamentos.length)}
-                        </span>{" "}
-                        de{" "}
-                        <span className="text-white font-medium">
-                            {filteredLancamentos.length}
-                        </span>{" "}
-                        lançamento(s)
-                    </div>
-
-                    {/* Controles de Paginação */}
-                    <div className="flex items-center gap-4">
-                        {/* Itens por página */}
-                        <div className="flex items-center gap-2">
-                            <span className="text-sm text-slate-400">Por página:</span>
-                            <select
-                                value={itensPorPagina}
-                                onChange={(e) => mudarItensPorPagina(parseInt(e.target.value))}
-                                className="px-3 py-2 bg-slate-800 border border-slate-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                            >
-                                <option value={10}>10</option>
-                                <option value={20}>20</option>
-                                <option value={50}>50</option>
-                                <option value={100}>100</option>
-                            </select>
-                        </div>
-
-                        {/* Botões de navegação */}
-                        <div className="flex items-center gap-2">
-                            <button
-                                onClick={() => mudarPagina(paginaAtual - 1)}
-                                disabled={paginaAtual === 1}
-                                className="p-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                            >
-                                <ChevronLeft size={20} />
-                            </button>
-
-                            {/* Números de página */}
-                            <div className="flex items-center gap-1">
-                                {Array.from({ length: totalPaginas }, (_, i) => i + 1)
-                                    .filter((page) => {
-                                        // Mostrar primeira, última, atual e adjacentes
-                                        return (
-                                            page === 1 ||
-                                            page === totalPaginas ||
-                                            Math.abs(page - paginaAtual) <= 1
-                                        );
-                                    })
-                                    .map((page, index, array) => {
-                                        // Adicionar "..." se houver gap
-                                        const prevPage = array[index - 1];
-                                        const showEllipsis = prevPage && page - prevPage > 1;
-
-                                        return (
-                                            <div key={page} className="flex items-center gap-1">
-                                                {showEllipsis && (
-                                                    <span className="px-2 text-slate-400">...</span>
-                                                )}
-                                                <button
-                                                    onClick={() => mudarPagina(page)}
-                                                    className={`px-3 py-1 rounded-lg transition-colors ${
-                                                        page === paginaAtual
-                                                            ? "bg-emerald-600 text-white"
-                                                            : "bg-slate-700 hover:bg-slate-600 text-white"
-                                                    }`}
-                                                >
-                                                    {page}
-                                                </button>
-                                            </div>
-                                        );
-                                    })}
-                            </div>
-
-                            <button
-                                onClick={() => mudarPagina(paginaAtual + 1)}
-                                disabled={paginaAtual === totalPaginas}
-                                className="p-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                            >
-                                <ChevronRight size={20} />
-                            </button>
-                        </div>
-                    </div>
+            {/* Paginação */}
+            {filteredLancamentos.length > 0 && (
+                <div className="mt-6">
+                    <Pagination
+                        currentPage={paginaAtual}
+                        totalPages={totalPaginas}
+                        onPageChange={setPaginaAtual}
+                        itemsPerPage={itensPorPagina}
+                        totalItems={filteredLancamentos.length}
+                        onItemsPerPageChange={mudarItensPorPagina}
+                    />
                 </div>
-            </div>
+            )}
 
             {/* Modal */}
             <LancamentoModal
