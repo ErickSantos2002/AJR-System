@@ -60,14 +60,14 @@ def main():
     for arquivo in arquivos_dat:
         resultado = analisar_arquivo_dat(arquivo)
 
-        print(f"\n📄 {resultado['arquivo']}")
+        print(f"\n>> {resultado['arquivo']}")
         print(f"   Tamanho: {resultado.get('tamanho', 0):,} bytes")
 
         if 'erro' in resultado:
-            print(f"   ❌ Erro: {resultado['erro']}")
+            print(f"   ERRO: {resultado['erro']}")
             continue
 
-        print(f"   Texto legível: {'✅' if resultado.get('texto_legivel') else '❌'}")
+        print(f"   Texto legivel: {'SIM' if resultado.get('texto_legivel') else 'NAO'}")
 
         if resultado.get('categorias'):
             print("   Possível conteúdo:")

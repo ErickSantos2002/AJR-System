@@ -75,6 +75,46 @@ def criar_lancamento(lancamento: LancamentoCreate, db: Session = Depends(get_db)
     return novo_lancamento
 
 
+@router.put("/{lancamento_id}", response_model=LancamentoResponse)
+def atualizar_lancamento(lancamento_id: int, lancamento: LancamentoCreate, db: Session = Depends(get_db)):
+    from decimal import Decimal
+    from app.models.partida import TipoPartida
+
+    # Buscar lançamento existente
+    db_lancamento = db.query(Lancamento).filter(Lancamento.id == lancamento_id).first()
+    if not db_lancamento:
+        raise HTTPException(status_code=404, detail="Lançamento não encontrado")
+
+    # Validar partidas dobradas
+    debitos = sum(p.valor for p in lancamento.partidas if p.tipo == TipoPartida.DEBITO)
+    creditos = sum(p.valor for p in lancamento.partidas if p.tipo == TipoPartida.CREDITO)
+
+    if debitos != creditos:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Partidas dobradas inválidas: débitos ({debitos}) != créditos ({creditos})"
+        )
+
+    # Atualizar dados do lançamento
+    for key, value in lancamento.model_dump(exclude={'partidas'}).items():
+        setattr(db_lancamento, key, value)
+
+    # Deletar partidas antigas
+    db.query(Partida).filter(Partida.lancamento_id == lancamento_id).delete()
+
+    # Criar novas partidas
+    for partida_data in lancamento.partidas:
+        partida = Partida(
+            lancamento_id=db_lancamento.id,
+            **partida_data.model_dump()
+        )
+        db.add(partida)
+
+    db.commit()
+    db.refresh(db_lancamento)
+    return db_lancamento
+
+
 @router.delete("/{lancamento_id}", status_code=status.HTTP_204_NO_CONTENT)
 def deletar_lancamento(lancamento_id: int, db: Session = Depends(get_db)):
     db_lancamento = db.query(Lancamento).filter(Lancamento.id == lancamento_id).first()

@@ -11,6 +11,8 @@ from app.models.contrato_locacao import ContratoLocacao
 from app.models.viagem import Viagem
 from app.models.abastecimento import Abastecimento
 from app.models.manutencao import Manutencao
+from app.models.conta_pagar import ContaPagar, StatusContaPagar
+from app.models.conta_receber import ContaReceber, StatusContaReceber
 
 __all__ = [
     "PlanoContas",
@@ -26,4 +28,8 @@ __all__ = [
     "Viagem",
     "Abastecimento",
     "Manutencao",
+    "ContaPagar",
+    "StatusContaPagar",
+    "ContaReceber",
+    "StatusContaReceber",
 ]
