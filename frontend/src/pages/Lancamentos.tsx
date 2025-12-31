@@ -7,7 +7,7 @@ import LancamentosError from "../components/LancamentosError";
 import LancamentoModal from "../components/LancamentoModal";
 import Pagination from "../components/Pagination";
 import type { Lancamento } from "../types";
-import { showSuccess, showError, toastPromise } from "../lib/toast";
+import { showSuccess, showError } from "../lib/toast";
 
 export default function Lancamentos() {
     const [searchTerm, setSearchTerm] = useState("");

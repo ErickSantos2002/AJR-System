@@ -619,7 +619,6 @@ export default function PlanoContasPage() {
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}
                 onItemsPerPageChange={setItensPorPagina}
-                itemsPerPageOptions={[25, 50, 100, 200]}
             />
 
             {/* Modal de Cadastro/Edição */}

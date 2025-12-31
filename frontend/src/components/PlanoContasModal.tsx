@@ -108,8 +108,9 @@ export default function PlanoContasModal({
     // Atualizar código e nível quando conta pai mudar
     useEffect(() => {
         if (!conta && isOpen) {
-            const novoNivel = calcularNivel(formData.conta_pai_id);
-            const novoCodigo = sugerirProximoCodigo(formData.conta_pai_id);
+            const contaPaiId = formData.conta_pai_id ?? undefined;
+            const novoNivel = calcularNivel(contaPaiId);
+            const novoCodigo = sugerirProximoCodigo(contaPaiId);
             setFormData((prev) => ({
                 ...prev,
                 nivel: novoNivel,
@@ -425,7 +426,7 @@ export default function PlanoContasModal({
                                 {formData.nivel === 2 && "Subconta de Nível 2"}
                                 {formData.nivel === 3 && "Subconta de Nível 3"}
                                 {formData.nivel === 4 && "Subconta de Nível 4"}
-                                {formData.nivel >= 5 && "Subconta de Nível 5+"}
+                                {formData.nivel && formData.nivel >= 5 && "Subconta de Nível 5+"}
                             </div>
                         </div>
                         <p className="text-xs text-slate-500 mt-2">

@@ -49,7 +49,7 @@ export default function Clientes() {
         }
     };
 
-    const handleToggleAtivo = async (id: number, ativo: boolean, nome: string) => {
+    const handleToggleAtivo = async (id: number, ativo: boolean, _nome: string) => {
         try {
             await toggleAtivoCliente.mutateAsync({ id, ativo: !ativo });
             showSuccess(`Cliente ${!ativo ? "ativado" : "inativado"} com sucesso!`);
@@ -86,7 +86,7 @@ export default function Clientes() {
     const clientesPaginados = filteredClientes.slice(indiceInicio, indiceFim);
 
     if (isLoading) return <LoadingSpinner fullScreen text="Carregando clientes..." />;
-    if (isError) return <ErrorMessage error={error as Error} onRetry={refetch} fullScreen />;
+    if (isError) return <ErrorMessage message="Não foi possível carregar os clientes." error={error as Error} onRetry={refetch} fullScreen />;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
@@ -382,7 +382,6 @@ export default function Clientes() {
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}
                 onItemsPerPageChange={setItensPorPagina}
-                itemsPerPageOptions={[10, 25, 50, 100]}
             />
 
             {/* Modal */}

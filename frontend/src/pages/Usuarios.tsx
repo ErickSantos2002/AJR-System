@@ -75,7 +75,7 @@ export default function Usuarios() {
     });
 
     if (isLoading) return <LoadingSpinner fullScreen text="Carregando usuários..." />;
-    if (isError) return <ErrorMessage error={error as Error} onRetry={refetch} fullScreen />;
+    if (isError) return <ErrorMessage message="Não foi possível carregar os usuários." error={error as Error} onRetry={refetch} fullScreen />;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">

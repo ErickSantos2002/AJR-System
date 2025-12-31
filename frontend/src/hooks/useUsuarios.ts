@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import api from "../api/axios";
-import { Usuario, UsuarioCreate, UsuarioUpdate } from "../types/usuario";
+import type { Usuario, UsuarioCreate, UsuarioUpdate } from "../types/usuario";
 
 export function useUsuarios() {
     return useQuery({

@@ -58,7 +58,7 @@ export default function Equipamentos() {
         }
     };
 
-    const handleToggleAtivo = async (id: number, ativo: boolean, identificador: string) => {
+    const handleToggleAtivo = async (id: number, ativo: boolean, _identificador: string) => {
         try {
             await toggleAtivoEquipamento.mutateAsync({ id, ativo: !ativo });
             showSuccess(`Equipamento ${!ativo ? "ativado" : "inativado"} com sucesso!`);
@@ -93,7 +93,7 @@ export default function Equipamentos() {
     const equipamentosPaginados = filteredEquipamentos.slice(indiceInicio, indiceFim);
 
     if (isLoading) return <LoadingSpinner fullScreen text="Carregando equipamentos..." />;
-    if (isError) return <ErrorMessage error={error as Error} onRetry={refetch} fullScreen />;
+    if (isError) return <ErrorMessage message="Não foi possível carregar os equipamentos." error={error as Error} onRetry={refetch} fullScreen />;
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
@@ -372,7 +372,6 @@ export default function Equipamentos() {
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}
                 onItemsPerPageChange={setItensPorPagina}
-                itemsPerPageOptions={[10, 25, 50, 100]}
             />
 
             {/* Modal */}

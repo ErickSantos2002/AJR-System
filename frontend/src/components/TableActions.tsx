@@ -1,4 +1,5 @@
-import { Edit2, Trash2, Eye, MoreVertical, LucideIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { Edit2, Trash2, Eye, MoreVertical } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 export interface TableAction {

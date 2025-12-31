@@ -1,5 +1,6 @@
-import { LucideIcon, Inbox, FileX, Search, Database } from "lucide-react";
-import { ReactNode } from "react";
+import type { LucideIcon } from "lucide-react";
+import { Inbox, FileX, Search } from "lucide-react";
+import type { ReactNode } from "react";
 
 interface EmptyStateProps {
     icon?: LucideIcon;

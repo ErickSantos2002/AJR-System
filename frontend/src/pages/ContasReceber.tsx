@@ -55,7 +55,7 @@ export default function ContasReceber() {
     const handleSave = async (data: Partial<ContaReceber>) => {
         try {
             if (contaEditando) {
-                await atualizarConta.mutateAsync({ id: contaEditando.id, data });
+                await atualizarConta.mutateAsync({ id: contaEditando.id, dados: data });
                 showSuccess("Conta atualizada com sucesso!");
             } else {
                 await criarConta.mutateAsync(data);
