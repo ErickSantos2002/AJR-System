@@ -1,5 +1,5 @@
 # Backend Dockerfile - Multi-stage build for production
-FROM python:3.11-slim as builder
+FROM python:3.11-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -10,11 +10,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
+# Create virtual environment
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
 # Copy requirements first for better caching
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir --user -r requirements.txt
+# Install Python dependencies in virtual environment
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Production stage
 FROM python:3.11-slim
@@ -27,8 +31,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy Python dependencies from builder
-COPY --from=builder /root/.local /root/.local
+# Copy virtual environment from builder
+COPY --from=builder /opt/venv /opt/venv
 
 # Copy application code
 COPY . .
@@ -36,12 +40,12 @@ COPY . .
 # Make sure scripts are executable
 RUN chmod +x criar_admin_direto.py
 
-# Update PATH
-ENV PATH=/root/.local/bin:$PATH
-
-# Create non-root user
+# Create non-root user and fix permissions
 RUN useradd -m -u 1000 appuser && \
-    chown -R appuser:appuser /app
+    chown -R appuser:appuser /app /opt/venv
+
+# Update PATH to use venv
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Switch to non-root user
 USER appuser
