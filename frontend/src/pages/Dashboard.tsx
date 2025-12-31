@@ -424,18 +424,18 @@ export default function Dashboard() {
                                 cx="50%"
                                 cy="50%"
                                 labelLine={false}
-                                label={({ nome, percent }) =>
-                                    `${nome}: ${(percent * 100).toFixed(0)}%`
+                                label={({ name, percent }) =>
+                                    `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`
                                 }
                                 outerRadius={80}
                                 fill="#8884d8"
                                 dataKey="valor"
                             >
-                                {data.graficos.receitas_por_tipo.map((entry, index) => (
+                                {data.graficos.receitas_por_tipo.map((_, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                 ))}
                             </Pie>
-                            <Tooltip formatter={(value: number) => formatCurrency(value)} />
+                            <Tooltip formatter={(value: number | undefined) => value ? formatCurrency(value) : "R$ 0,00"} />
                         </PieChart>
                     </ResponsiveContainer>
                 </div>
@@ -451,7 +451,7 @@ export default function Dashboard() {
                             <XAxis dataKey="nome" stroke="#94a3b8" fontSize={12} />
                             <YAxis stroke="#94a3b8" fontSize={12} />
                             <Tooltip
-                                formatter={(value: number) => formatCurrency(value)}
+                                formatter={(value: number | undefined) => value ? formatCurrency(value) : "R$ 0,00"}
                                 contentStyle={{
                                     backgroundColor: "#1e293b",
                                     border: "1px solid #334155",
@@ -472,7 +472,7 @@ export default function Dashboard() {
                         <XAxis dataKey="mes" stroke="#94a3b8" fontSize={12} />
                         <YAxis stroke="#94a3b8" fontSize={12} />
                         <Tooltip
-                            formatter={(value: number) => formatCurrency(value)}
+                            formatter={(value: number | undefined) => value ? formatCurrency(value) : "R$ 0,00"}
                             contentStyle={{
                                 backgroundColor: "#1e293b",
                                 border: "1px solid #334155",
