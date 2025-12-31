@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  database:
+    image: postgres:16-alpine
+    container_name: ajr-database
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-ajr_system}
+      POSTGRES_USER: ${DATABASE_USER:-postgres}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${DATABASE_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ajr-network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ajr-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_HOST: database
+      DATABASE_PORT: 5432
+      DATABASE_NAME: ${DATABASE_NAME:-ajr_system}
+      DATABASE_USER: ${DATABASE_USER:-postgres}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      APP_NAME: ${APP_NAME:-AJR System API}
+      DEBUG: ${DEBUG:-False}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      database:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      - /app/venv
+    command: >
+      sh -c "
+        echo 'Aguardando banco de dados...' &&
+        sleep 5 &&
+        echo 'Executando migrations...' &&
+        alembic upgrade head &&
+        echo 'Iniciando aplicação...' &&
+        uvicorn app.main:app --host 0.0.0.0 --port 8000
+      "
+    networks:
+      - ajr-network
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    container_name: ajr-frontend
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
+    depends_on:
+      - backend
+    networks:
+      - ajr-network
+
+  # pgAdmin (opcional - para administração do banco)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: ajr-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@ajr.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    depends_on:
+      - database
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - ajr-network
+    profiles:
+      - dev
+
+networks:
+  ajr-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  pgadmin_data:
+    driver: local

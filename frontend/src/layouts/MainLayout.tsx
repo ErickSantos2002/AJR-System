@@ -45,14 +45,16 @@ export default function MainLayout() {
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
             {/* Sidebar */}
             <aside
-                className={`fixed top-0 left-0 z-40 h-screen transition-all duration-300 ${
-                    sidebarOpen ? "translate-x-0" : "-translate-x-full"
-                } bg-gradient-to-b from-slate-900/95 to-slate-950/95 backdrop-blur-xl border-r border-slate-700/50 w-64`}
+                className={`fixed top-0 left-0 z-40 h-screen transition-all duration-300 bg-gradient-to-b from-slate-900/95 to-slate-950/95 backdrop-blur-xl border-r border-slate-700/50 ${
+                    sidebarOpen
+                        ? "w-64 translate-x-0"
+                        : "w-20 lg:translate-x-0 -translate-x-full"
+                }`}
             >
                 <div className="h-full px-3 py-4 overflow-y-auto">
                     {/* Logo */}
-                    <div className="flex items-center justify-between mb-8 px-3">
-                        <div className="flex items-center gap-3">
+                    <div className={`flex items-center mb-8 px-3 ${sidebarOpen ? "justify-between" : "justify-center"}`}>
+                        <div className={`flex items-center gap-3 ${sidebarOpen ? "" : "flex-col"}`}>
                             <div className="relative">
                                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-300 rounded-full blur-sm"></div>
                                 <div className="relative bg-gradient-to-br from-cyan-300 to-blue-200 rounded-full p-1">
@@ -63,19 +65,23 @@ export default function MainLayout() {
                                     />
                                 </div>
                             </div>
-                            <div>
-                                <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                                    AJR System
-                                </h1>
-                                <p className="text-xs text-slate-500 mt-1">Gestão Contábil</p>
-                            </div>
+                            {sidebarOpen && (
+                                <div>
+                                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                                        AJR System
+                                    </h1>
+                                    <p className="text-xs text-slate-500 mt-1">Gestão Contábil</p>
+                                </div>
+                            )}
                         </div>
-                        <button
-                            onClick={() => setSidebarOpen(false)}
-                            className="lg:hidden text-slate-400 hover:text-white transition-colors"
-                        >
-                            <X size={24} />
-                        </button>
+                        {sidebarOpen && (
+                            <button
+                                onClick={() => setSidebarOpen(false)}
+                                className="lg:hidden text-slate-400 hover:text-white transition-colors"
+                            >
+                                <X size={24} />
+                            </button>
+                        )}
                     </div>
 
                     {/* Menu Items */}
@@ -93,18 +99,37 @@ export default function MainLayout() {
                                 <li key={item.path}>
                                     <Link
                                         to={item.path}
-                                        className={`flex items-center p-3 rounded-xl transition-all duration-200 group ${
+                                        className={`flex items-center p-3 rounded-xl transition-all duration-200 group relative ${
                                             isActive
                                                 ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg shadow-blue-500/20"
                                                 : "text-slate-300 hover:bg-slate-800/50 hover:text-white"
-                                        }`}
+                                        } ${sidebarOpen ? "" : "justify-center"}`}
+                                        title={!sidebarOpen ? item.label : ""}
                                     >
-                                        <Icon size={20} className={`mr-3 ${isActive ? "" : "group-hover:scale-110 transition-transform"}`} />
-                                        <span>{item.label}</span>
-                                        {item.adminOnly && (
-                                            <span className="ml-auto text-xs px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">
-                                                Admin
-                                            </span>
+                                        <Icon
+                                            size={20}
+                                            className={`${sidebarOpen ? "mr-3" : ""} ${isActive ? "" : "group-hover:scale-110 transition-transform"}`}
+                                        />
+                                        {sidebarOpen && (
+                                            <>
+                                                <span>{item.label}</span>
+                                                {item.adminOnly && (
+                                                    <span className="ml-auto text-xs px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">
+                                                        Admin
+                                                    </span>
+                                                )}
+                                            </>
+                                        )}
+                                        {/* Tooltip para modo mini */}
+                                        {!sidebarOpen && (
+                                            <div className="absolute left-full ml-2 px-3 py-2 bg-slate-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap z-50 border border-slate-700">
+                                                {item.label}
+                                                {item.adminOnly && (
+                                                    <span className="ml-2 text-xs text-yellow-400">
+                                                        (Admin)
+                                                    </span>
+                                                )}
+                                            </div>
                                         )}
                                     </Link>
                                 </li>
@@ -115,9 +140,9 @@ export default function MainLayout() {
             </aside>
 
             {/* Main Content */}
-            <div className={`${sidebarOpen ? "lg:ml-64" : ""} transition-all duration-300`}>
+            <div className={`${sidebarOpen ? "lg:ml-64" : "lg:ml-20"} transition-all duration-300`}>
                 {/* Top Navbar */}
-                <nav className="bg-slate-900/50 backdrop-blur-xl border-b border-slate-700/50 px-6 py-4">
+                <nav className="sticky top-0 z-30 bg-slate-900/50 backdrop-blur-xl border-b border-slate-700/50 px-6 py-4">
                     <div className="flex items-center justify-between">
                         <button
                             onClick={() => setSidebarOpen(!sidebarOpen)}
