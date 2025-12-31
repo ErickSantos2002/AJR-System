@@ -615,6 +615,7 @@ export default function PlanoContasPage() {
             {/* Paginação */}
             <Pagination
                 currentPage={paginaAtual}
+                totalPages={Math.ceil(filteredContas.length / itensPorPagina)}
                 totalItems={filteredContas.length}
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}

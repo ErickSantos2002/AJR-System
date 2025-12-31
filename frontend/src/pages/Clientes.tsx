@@ -378,6 +378,7 @@ export default function Clientes() {
             {/* Paginação */}
             <Pagination
                 currentPage={paginaAtual}
+                totalPages={Math.ceil(filteredClientes.length / itensPorPagina)}
                 totalItems={filteredClientes.length}
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}

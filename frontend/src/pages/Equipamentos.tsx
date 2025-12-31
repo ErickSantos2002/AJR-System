@@ -368,6 +368,7 @@ export default function Equipamentos() {
             {/* Paginação */}
             <Pagination
                 currentPage={paginaAtual}
+                totalPages={Math.ceil(filteredEquipamentos.length / itensPorPagina)}
                 totalItems={filteredEquipamentos.length}
                 itemsPerPage={itensPorPagina}
                 onPageChange={setPaginaAtual}
