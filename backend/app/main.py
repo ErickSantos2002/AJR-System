@@ -16,6 +16,7 @@ from app.routers import (
     dashboard,
     contas_pagar,
     contas_receber,
+    auth,
 )
 
 app = FastAPI(title=settings.APP_NAME, debug=settings.DEBUG)
@@ -27,6 +28,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Registrar router - Autenticação
+app.include_router(auth.router)
 
 # Registrar routers - Gestão
 app.include_router(equipamentos.router)

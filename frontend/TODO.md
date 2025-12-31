@@ -361,10 +361,14 @@
   - Feedback com toasts (sucesso/erro)
   - Integrado com React Query
 
+- [x] **Paginação** ✅ (31/12/2025)
+  - Paginação completa com componente reutilizável ✅
+  - Seletor de itens por página ✅
+  - Footer mostrando quantidade de itens ✅
+
 - [ ] **Melhorias Pendentes**
   - Adicionar filtro por data (período)
   - Adicionar filtro por fornecedor
-  - Adicionar paginação
   - Adicionar ordenação por colunas
   - Integrar com lançamentos contábeis (gerar lançamento ao pagar)
   - Adicionar relatórios (contas a pagar por período, fornecedor, etc)
@@ -402,10 +406,14 @@
   - Feedback com toasts (sucesso/erro)
   - Integrado com React Query
 
+- [x] **Paginação** ✅ (31/12/2025)
+  - Paginação completa com componente reutilizável ✅
+  - Seletor de itens por página ✅
+  - Footer mostrando quantidade de itens ✅
+
 - [ ] **Melhorias Pendentes**
   - Adicionar filtro por data (período)
   - Adicionar filtro por cliente
-  - Adicionar paginação
   - Adicionar ordenação por colunas
   - Integrar com lançamentos contábeis (gerar lançamento ao receber)
   - Adicionar relatórios (contas a receber por período, cliente, etc)

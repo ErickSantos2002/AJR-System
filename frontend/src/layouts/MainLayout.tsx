@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import {
     LayoutDashboard,
     Users,
@@ -10,25 +10,36 @@ import {
     X,
     CreditCard,
     DollarSign,
+    LogOut,
+    Users2,
 } from "lucide-react";
 import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 import logo from "../assets/logo_png.png";
 
 const menuItems = [
-    { path: "/", icon: LayoutDashboard, label: "Dashboard" },
-    { path: "/plano-contas", icon: FileText, label: "Plano de Contas" },
-    { path: "/lancamentos", icon: FileText, label: "Lançamentos" },
-    { path: "/contas-pagar", icon: CreditCard, label: "Contas a Pagar" },
-    { path: "/contas-receber", icon: DollarSign, label: "Contas a Receber" },
-    { path: "/clientes", icon: Users, label: "Clientes" },
-    { path: "/equipamentos", icon: Truck, label: "Equipamentos" },
-    { path: "/motoristas", icon: UserCircle, label: "Motoristas" },
-    { path: "/configuracoes", icon: Settings, label: "Configurações" },
+    { path: "/", icon: LayoutDashboard, label: "Dashboard", adminOnly: false },
+    { path: "/plano-contas", icon: FileText, label: "Plano de Contas", adminOnly: false },
+    { path: "/lancamentos", icon: FileText, label: "Lançamentos", adminOnly: false },
+    { path: "/contas-pagar", icon: CreditCard, label: "Contas a Pagar", adminOnly: false },
+    { path: "/contas-receber", icon: DollarSign, label: "Contas a Receber", adminOnly: false },
+    { path: "/clientes", icon: Users, label: "Clientes", adminOnly: false },
+    { path: "/equipamentos", icon: Truck, label: "Equipamentos", adminOnly: false },
+    { path: "/motoristas", icon: UserCircle, label: "Motoristas", adminOnly: false },
+    { path: "/configuracoes", icon: Settings, label: "Configurações", adminOnly: false },
+    { path: "/usuarios", icon: Users2, label: "Usuários", adminOnly: true },
 ];
 
 export default function MainLayout() {
     const location = useLocation();
+    const navigate = useNavigate();
+    const { user, logout } = useAuth();
     const [sidebarOpen, setSidebarOpen] = useState(true);
+
+    const handleLogout = () => {
+        logout();
+        navigate("/login");
+    };
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -70,6 +81,11 @@ export default function MainLayout() {
                     {/* Menu Items */}
                     <ul className="space-y-2 font-medium">
                         {menuItems.map((item) => {
+                            // Ocultar itens de admin se o usuário não for admin
+                            if (item.adminOnly && !user?.is_admin) {
+                                return null;
+                            }
+
                             const Icon = item.icon;
                             const isActive = location.pathname === item.path;
 
@@ -85,6 +101,11 @@ export default function MainLayout() {
                                     >
                                         <Icon size={20} className={`mr-3 ${isActive ? "" : "group-hover:scale-110 transition-transform"}`} />
                                         <span>{item.label}</span>
+                                        {item.adminOnly && (
+                                            <span className="ml-auto text-xs px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">
+                                                Admin
+                                            </span>
+                                        )}
                                     </Link>
                                 </li>
                             );
@@ -105,10 +126,26 @@ export default function MainLayout() {
                             <Menu size={24} />
                         </button>
 
-                        <div className="flex items-center space-x-4">
-                            <span className="text-sm text-slate-400">
-                                Sistema de Gestão Contábil
-                            </span>
+                        <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                                <UserCircle size={20} className="text-blue-400" />
+                                <div className="flex flex-col">
+                                    <span className="text-sm text-white font-medium">
+                                        {user?.nome || "Usuário"}
+                                    </span>
+                                    <span className="text-xs text-slate-400">
+                                        {user?.email}
+                                    </span>
+                                </div>
+                            </div>
+                            <button
+                                onClick={handleLogout}
+                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 hover:bg-red-500/20 hover:border-red-500/30 transition-all"
+                                title="Sair"
+                            >
+                                <LogOut size={18} />
+                                <span className="text-sm font-medium">Sair</span>
+                            </button>
                         </div>
                     </div>
                 </nav>

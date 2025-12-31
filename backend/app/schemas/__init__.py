@@ -24,6 +24,16 @@ from app.schemas.lancamento import (
     LancamentoResponse,
 )
 
+from app.schemas.auth import (
+    UsuarioBase,
+    UsuarioCreate,
+    UsuarioUpdate,
+    UsuarioResponse,
+    Token,
+    TokenData,
+    LoginRequest
+)
+
 __all__ = [
     "PlanoContasBase",
     "PlanoContasCreate",
@@ -42,4 +52,11 @@ __all__ = [
     "LancamentoBase",
     "LancamentoCreate",
     "LancamentoResponse",
+    "UsuarioBase",
+    "UsuarioCreate",
+    "UsuarioUpdate",
+    "UsuarioResponse",
+    "Token",
+    "TokenData",
+    "LoginRequest",
 ]

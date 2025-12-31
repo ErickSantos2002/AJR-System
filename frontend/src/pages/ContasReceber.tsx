@@ -3,6 +3,7 @@ import { Search, Plus, DollarSign, Calendar, Tag, Check, X, AlertCircle, Clock, 
 import { useContasReceber, useContasReceberMutations } from "../hooks/useContasReceber";
 import type { ContaReceber, StatusContaReceber } from "../types";
 import ContaReceberModal from "../components/ContaReceberModal";
+import Pagination from "../components/Pagination";
 import { showSuccess, showError } from "../lib/toast";
 
 export default function ContasReceber() {
@@ -12,6 +13,10 @@ export default function ContasReceber() {
     const [showFilters, setShowFilters] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [contaEditando, setContaEditando] = useState<ContaReceber | null>(null);
+
+    // Paginação
+    const [paginaAtual, setPaginaAtual] = useState(1);
+    const [itensPorPagina, setItensPorPagina] = useState(10);
 
     const { data: contas = [], isLoading } = useContasReceber();
     const { criarConta, atualizarConta, marcarComoRecebido, deletarConta } = useContasReceberMutations();
@@ -95,6 +100,12 @@ export default function ContasReceber() {
     const totalAReceber = filteredContas
         .filter((c) => c.status !== "RECEBIDO" && c.status !== "CANCELADO")
         .reduce((sum, c) => sum + c.valor, 0);
+
+    // Paginação
+    const indiceInicio = (paginaAtual - 1) * itensPorPagina;
+    const indiceFim = indiceInicio + itensPorPagina;
+    const contasPaginadas = filteredContas.slice(indiceInicio, indiceFim);
+    const totalPaginas = Math.ceil(filteredContas.length / itensPorPagina);
 
     if (isLoading) {
         return (
@@ -230,7 +241,7 @@ export default function ContasReceber() {
 
             {/* Lista de Contas */}
             <div className="space-y-4">
-                {filteredContas.map((conta) => (
+                {contasPaginadas.map((conta) => (
                     <div
                         key={conta.id}
                         className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-green-500/30 transition-all"
@@ -311,6 +322,40 @@ export default function ContasReceber() {
                         <p className="text-slate-400">Nenhuma conta encontrada</p>
                     </div>
                 )}
+            </div>
+
+            {/* Paginação */}
+            {totalPaginas > 1 && (
+                <div className="mt-6">
+                    <Pagination
+                        currentPage={paginaAtual}
+                        totalPages={totalPaginas}
+                        onPageChange={setPaginaAtual}
+                        totalItems={filteredContas.length}
+                        itemsPerPage={itensPorPagina}
+                        onItemsPerPageChange={setItensPorPagina}
+                        showItemsPerPage={true}
+                    />
+                </div>
+            )}
+
+            {/* Footer */}
+            <div className="mt-6 flex items-center justify-between">
+                <div className="text-sm text-slate-400">
+                    Mostrando{" "}
+                    <span className="text-white font-medium">
+                        {indiceInicio + 1}
+                    </span>{" "}
+                    a{" "}
+                    <span className="text-white font-medium">
+                        {Math.min(indiceFim, filteredContas.length)}
+                    </span>{" "}
+                    de{" "}
+                    <span className="text-white font-medium">
+                        {filteredContas.length}
+                    </span>{" "}
+                    conta(s)
+                </div>
             </div>
 
             {/* Modal de Cadastro/Edição */}
