@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { X, Plus, Trash2, AlertCircle, CheckCircle2, HelpCircle } from "lucide-react";
+import { X, Plus, Trash2, AlertCircle, CheckCircle2, HelpCircle, TrendingUp, TrendingDown, Calendar } from "lucide-react";
+import { useMovimentacoesConta } from "../hooks/usePlanoContasDetalhes";
 import type { Historico, PlanoContas, Lancamento } from "../types";
 
 interface Partida {
@@ -15,6 +16,101 @@ interface LancamentoModalProps {
     historicos: Historico[];
     contas: PlanoContas[];
     lancamentoInicial?: Lancamento | null;
+}
+
+// Componente para preview das últimas movimentações de uma conta
+function MovimentacoesPreview({ contaId }: { contaId: number | null }) {
+    const { data: movimentacoes, isLoading } = useMovimentacoesConta(contaId, 5);
+
+    if (!contaId) return null;
+
+    const formatarMoeda = (valor: number) => {
+        return new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+        }).format(valor);
+    };
+
+    const formatarData = (dataISO: string) => {
+        return new Date(dataISO).toLocaleDateString("pt-BR", {
+            day: "2-digit",
+            month: "2-digit",
+        });
+    };
+
+    if (isLoading) {
+        return (
+            <div className="mt-2 p-3 bg-slate-950/50 rounded-lg border border-slate-700/30">
+                <div className="flex items-center gap-2 mb-2">
+                    <div className="h-3 w-3 bg-indigo-500/50 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-slate-400">Carregando movimentações...</span>
+                </div>
+            </div>
+        );
+    }
+
+    if (!movimentacoes || movimentacoes.movimentacoes.length === 0) {
+        return (
+            <div className="mt-2 p-3 bg-slate-950/50 rounded-lg border border-slate-700/30">
+                <p className="text-xs text-slate-500 text-center">Sem movimentações anteriores</p>
+            </div>
+        );
+    }
+
+    return (
+        <div className="mt-2 p-3 bg-slate-950/50 rounded-lg border border-indigo-500/20">
+            <div className="flex items-center gap-2 mb-2">
+                <div className="h-2 w-2 bg-indigo-500 rounded-full"></div>
+                <span className="text-xs font-medium text-indigo-300">
+                    Últimas {movimentacoes.movimentacoes.length} movimentações
+                </span>
+            </div>
+            <div className="space-y-1.5">
+                {movimentacoes.movimentacoes.map((mov) => (
+                    <div
+                        key={mov.id}
+                        className="flex items-center justify-between p-2 bg-slate-900/50 rounded hover:bg-slate-900/70 transition-colors"
+                    >
+                        <div className="flex items-center gap-2 flex-1 min-w-0">
+                            <div
+                                className={`p-1 rounded ${
+                                    mov.tipo === "DEBITO"
+                                        ? "bg-emerald-500/20 text-emerald-400"
+                                        : "bg-rose-500/20 text-rose-400"
+                                }`}
+                            >
+                                {mov.tipo === "DEBITO" ? (
+                                    <TrendingUp size={12} />
+                                ) : (
+                                    <TrendingDown size={12} />
+                                )}
+                            </div>
+                            <div className="flex items-center gap-1.5 text-xs text-slate-400 min-w-0">
+                                <Calendar size={10} />
+                                <span>{formatarData(mov.data)}</span>
+                                {mov.complemento && (
+                                    <span className="truncate text-slate-500">- {mov.complemento}</span>
+                                )}
+                            </div>
+                        </div>
+                        <span
+                            className={`text-xs font-semibold whitespace-nowrap ml-2 ${
+                                mov.tipo === "DEBITO" ? "text-emerald-400" : "text-rose-400"
+                            }`}
+                        >
+                            {mov.tipo === "DEBITO" ? "+" : "-"}
+                            {formatarMoeda(mov.valor)}
+                        </span>
+                    </div>
+                ))}
+            </div>
+            {movimentacoes.total_movimentacoes > 5 && (
+                <p className="text-xs text-slate-500 text-center mt-2">
+                    + {movimentacoes.total_movimentacoes - 5} movimentações anteriores
+                </p>
+            )}
+        </div>
+    );
 }
 
 export default function LancamentoModal({
@@ -333,6 +429,9 @@ export default function LancamentoModal({
                                                             ))}
                                                         </select>
 
+                                                        {/* Preview das últimas movimentações */}
+                                                        <MovimentacoesPreview contaId={partida.conta_id} />
+
                                                         <input
                                                             type="number"
                                                             step="0.01"
@@ -428,6 +527,9 @@ export default function LancamentoModal({
                                                                 </option>
                                                             ))}
                                                         </select>
+
+                                                        {/* Preview das últimas movimentações */}
+                                                        <MovimentacoesPreview contaId={partida.conta_id} />
 
                                                         <input
                                                             type="number"
